@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cooney Provisions Driver Portal</title>
+
+<!-- ============================================================
+     COONEY PROVISIONS DRIVER PORTAL  (icon edition)
+     One file, no build step, hosted on static pages.
+
+     TO ADD OR EDIT AN APP: scroll to the APPS list in the script
+     at the bottom. Each app is one block. Set its url, give it an
+     icon filename in icons/, save, re-upload. A url that still says
+     PASTE_URL_HERE shows the tile dimmed with a Coming Soon badge.
+
+     FEATURED APP: whichever app has  feature: true  becomes the
+     big hero card at the top. Everything else falls into the grid.
+     ============================================================ -->
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cooney">
+<meta name="theme-color" content="#0B0908">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0B0908; --coal:#171110; --coal-edge:#2A1F18;
+    --gold:#D9A53C; --gold-hi:#F3C75F; --gold-dim:#8A6A2A;
+    --shield:#A31313; --shield-deep:#5E0D0D;
+    --cream:#F4ECDD; --smoke:#B3A58F;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html{ background:var(--ink); }
+  body{
+    background:radial-gradient(120% 55% at 50% -8%, #1C1410 0%, var(--ink) 55%), var(--ink);
+    color:var(--cream);
+    font-family:'Barlow Semi Condensed', system-ui, sans-serif;
+    min-height:100vh; min-height:100dvh;
+    padding:calc(env(safe-area-inset-top,0px) + 18px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);
+    display:flex; justify-content:center;
+  }
+  .frame{ width:100%; max-width:480px; display:flex; flex-direction:column; }
+
+  /* ---- masthead ---- */
+  .masthead{ text-align:center; padding:4px 0 2px; }
+  .masthead img{ width:100%; max-width:392px; height:auto; display:block; margin:0 auto; }
+  .gold-rule{ height:2px; margin:12px 2px 0;
+    background:linear-gradient(90deg, transparent, var(--gold-hi) 18%, var(--gold-hi) 82%, transparent);
+    transform-origin:center; }
+  .portal-label{ font-family:'Cinzel',serif; font-weight:600; font-size:12.5px; letter-spacing:.42em;
+    text-indent:.42em; color:var(--gold); text-align:center; margin-top:11px; text-transform:uppercase; }
+
+  /* ---- greeting band ---- */
+  .band{ margin:15px 0 16px; padding:9px 16px;
+    background:linear-gradient(180deg, var(--shield) 0%, var(--shield-deep) 100%);
+    border-top:1px solid var(--gold-hi); border-bottom:1px solid var(--gold-hi);
+    box-shadow:0 8px 22px rgba(94,13,13,.35);
+    display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+  .band .hello{ font-family:'Cinzel',serif; font-weight:700; font-size:16px; letter-spacing:.06em; color:var(--cream); white-space:nowrap; }
+  .band .today{ font-size:13.5px; font-weight:600; letter-spacing:.04em; color:#F8DFA0; text-align:right; }
+
+  /* ---- section eyebrow ---- */
+  .eyebrow{ display:flex; align-items:center; gap:10px; margin:4px 2px 12px; }
+  .eyebrow span{ font-family:'Cinzel',serif; font-size:11px; font-weight:600; letter-spacing:.28em;
+    text-indent:.28em; color:var(--gold-dim); text-transform:uppercase; white-space:nowrap; }
+  .eyebrow::after{ content:''; flex:1; height:1px; background:linear-gradient(90deg, var(--gold-dim), transparent); }
+
+  /* ---- FEATURED hero card (wide banner) ---- */
+  .hero{ position:relative; display:block; margin-bottom:16px; text-decoration:none;
+    border:1px solid var(--coal-edge); border-radius:18px; overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.55), inset 0 1px 0 rgba(243,199,95,.08); }
+  .hero img{ display:block; width:100%; height:auto; }
+  .hero:active{ transform:scale(.99); }
+
+  /* ---- icon GRID ---- */
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; list-style:none; }
+  .card{ position:relative; display:flex; flex-direction:column; align-items:center; text-align:center;
+    padding:16px 12px 14px; text-decoration:none; color:var(--cream);
+    background:linear-gradient(180deg, #1A1310 0%, var(--coal) 100%);
+    border:1px solid var(--coal-edge); border-radius:16px;
+    box-shadow:0 7px 18px rgba(0,0,0,.5), inset 0 1px 0 rgba(243,199,95,.06);
+    transition:transform .12s ease, border-color .12s ease; }
+  .card:active{ transform:scale(.97); }
+  @media (hover:hover){ .card:hover{ transform:translateY(-2px); border-color:var(--gold-dim); } }
+  .card-art{ width:88px; height:88px; border-radius:20px; overflow:hidden; margin-bottom:11px;
+    box-shadow:0 6px 14px rgba(0,0,0,.5), 0 0 0 1px rgba(243,199,95,.28); }
+  .card-art img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .card-name{ font-family:'Cinzel',serif; font-weight:600; font-size:15px; letter-spacing:.03em; color:var(--gold-hi); line-height:1.2; }
+  .card-desc{ margin-top:4px; font-size:12px; font-weight:500; color:var(--smoke); line-height:1.3; }
+
+  .badge{ position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+    font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    padding:3px 10px; border-radius:99px; white-space:nowrap;
+    background:var(--shield); color:#FFF3D6; border:1px solid var(--gold-hi); box-shadow:0 3px 8px rgba(0,0,0,.5); }
+  .card.soon{ pointer-events:none; }
+  .card.soon .card-name{ color:var(--gold-dim); }
+  .card.soon .card-desc{ color:#5C5346; }
+  .card.soon .badge{ background:#2A2017; color:var(--gold-dim); border-color:var(--gold-dim); }
+  /* empty art frame: a waiting gold-edged plate, no fake icon */
+  .frame-empty{ width:88px; height:88px; border-radius:20px; margin-bottom:11px;
+    display:flex; align-items:center; justify-content:center;
+    background:repeating-linear-gradient(135deg, #160F0C, #160F0C 9px, #1B130F 9px, #1B130F 18px);
+    border:1px dashed var(--gold-dim); box-shadow:inset 0 1px 0 rgba(243,199,95,.05); }
+  .frame-empty .mark{ font-family:'Cinzel',serif; font-size:30px; font-weight:700; color:#3E3022; }
+
+  /* ---- footer ---- */
+  .footer{ margin-top:auto; padding-top:26px; text-align:center; }
+  .footer .est{ display:inline-block; font-family:'Cinzel',serif; font-weight:600; font-size:12px;
+    letter-spacing:.34em; text-indent:.34em; color:var(--gold);
+    padding:9px 22px; border-top:1px solid var(--gold-dim); border-bottom:1px solid var(--gold-dim); }
+  .footer .sub{ margin-top:8px; font-size:11.5px; letter-spacing:.06em; color:#6E6354; }
+
+  /* ---- load sequence ---- */
+  .masthead img{ opacity:0; transform:translateY(10px); animation:rise .6s ease forwards .05s; }
+  .gold-rule{ transform:scaleX(0); animation:draw .7s cubic-bezier(.2,.7,.2,1) forwards .45s; }
+  .portal-label,.band,.eyebrow{ opacity:0; animation:fade .5s ease forwards .8s; }
+  .hero{ opacity:0; transform:translateY(16px) scale(.98); animation:heroIn .55s cubic-bezier(.2,.7,.2,1) forwards .95s; }
+  .card{ opacity:0; transform:translateY(14px); animation:rise .45s ease forwards; }
+  .footer{ opacity:0; animation:fade .6s ease forwards 1.7s; }
+  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
+  @keyframes heroIn{ to{ opacity:1; transform:translateY(0) scale(1); } }
+  @keyframes draw{ to{ transform:scaleX(1); } }
+  @keyframes fade{ to{ opacity:1; } }
+  @media (prefers-reduced-motion: reduce){
+    .masthead img,.gold-rule,.portal-label,.band,.eyebrow,.hero,.card,.footer{ animation:none; opacity:1; transform:none; }
+  }
+
+  /* ---- celebration popups (birthdays + anniversaries) ---- */
+  .cele-overlay{ position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+    background:rgba(5,3,3,.74); z-index:200; overflow:hidden; }
+  .cele-overlay.show{ display:flex; }
+  .cele-card{ position:relative; z-index:3; width:86%; max-width:340px; text-align:center;
+    padding:30px 24px 26px; border:1px solid var(--gold-dim); border-radius:20px;
+    box-shadow:0 22px 60px rgba(0,0,0,.7), inset 0 1px 0 rgba(243,199,95,.12);
+    animation:cpop .5s cubic-bezier(.2,1.3,.4,1) both; }
+  .cele-card.bday{ background:linear-gradient(180deg,#221308 0%,#160C0A 100%); }
+  .cele-card.anniv{ background:linear-gradient(180deg,#1B1408 0%,#120B0A 100%); }
+  .cele-emoji{ font-size:46px; line-height:1; margin-bottom:8px; display:inline-block; }
+  .cele-emoji.bob{ animation:cbob 2s ease-in-out infinite; }
+  .cele-emoji.shake{ transform-origin:bottom center; animation:cshake 2.4s ease-in-out infinite; }
+  .cele-kicker{ font-family:'Cinzel',serif; font-weight:600; font-size:12px; letter-spacing:.32em;
+    text-indent:.32em; color:var(--gold-dim); text-transform:uppercase; }
+  .cele-name{ font-family:'Cinzel',serif; font-weight:700; font-size:26px; line-height:1.15;
+    color:var(--gold-hi); margin:8px 0 6px; text-shadow:0 2px 10px rgba(163,19,19,.5); }
+  .cele-name.cream{ color:var(--cream); text-shadow:none; font-size:24px; margin-bottom:2px; }
+  .cele-years{ font-family:'Cinzel',serif; font-weight:700; font-size:50px; line-height:1;
+    color:var(--gold-hi); margin:6px 0 2px; text-shadow:0 3px 16px rgba(217,165,60,.6); }
+  .cele-years-label{ font-family:'Cinzel',serif; font-weight:600; font-size:13px; letter-spacing:.3em;
+    text-indent:.3em; color:var(--gold); text-transform:uppercase; }
+  .cele-msg{ font-size:14.5px; font-weight:500; color:var(--smoke); line-height:1.4; margin:16px 0 20px; }
+  .cele-close{ display:inline-block; font-family:'Cinzel',serif; font-weight:600; font-size:13px;
+    letter-spacing:.12em; text-transform:uppercase; color:var(--ink); cursor:pointer;
+    padding:11px 30px; border-radius:99px; border:1px solid var(--gold-hi);
+    background:linear-gradient(180deg,var(--gold-hi),var(--gold)); }
+  .cele-close:active{ transform:scale(.96); }
+  @keyframes cpop{ from{ opacity:0; transform:scale(.8) translateY(20px);} to{ opacity:1; transform:scale(1) translateY(0);} }
+  @keyframes cbob{ 0%,100%{ transform:translateY(0) rotate(-3deg);} 50%{ transform:translateY(-7px) rotate(3deg);} }
+  @keyframes cshake{ 0%,86%,100%{ transform:rotate(0);} 90%{ transform:rotate(-7deg);} 94%{ transform:rotate(7deg);} 97%{ transform:rotate(-3deg);} }
+  .balloon{ position:absolute; bottom:-130px; width:46px; height:58px; border-radius:50% 50% 48% 48%; z-index:1; animation:cfloat linear forwards; }
+  .balloon::after{ content:''; position:absolute; bottom:-44px; left:50%; width:1px; height:44px; background:rgba(243,199,95,.45); transform:translateX(-50%); }
+  @keyframes cfloat{ from{opacity:.95;} to{ transform:translateY(-110vh) translateX(var(--drift,0)); opacity:0; } }
+  .confetti{ position:absolute; top:-20px; width:9px; height:14px; z-index:2; animation:cfall linear forwards; }
+  @keyframes cfall{ from{opacity:.95;} to{ transform:translateY(110vh) rotate(720deg); opacity:.3; } }
+  .cork{ position:absolute; left:50%; top:40%; width:14px; height:18px; border-radius:4px;
+    background:linear-gradient(180deg,#C8923A,#7A5A22); z-index:4; animation:ccork 2.6s ease-out infinite; }
+  @keyframes ccork{ 0%,30%{ transform:translate(-50%,0) rotate(0); opacity:0;} 34%{opacity:1;} 60%,100%{ transform:translate(70px,-280px) rotate(540deg); opacity:0;} }
+  .spray{ position:absolute; left:50%; top:42%; width:7px; height:7px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #FBE8B0, #E0B85A); z-index:2; opacity:0; animation:cspray 2.6s ease-out infinite; }
+  @keyframes cspray{ 0%,30%{ transform:translate(-50%,0) scale(.4); opacity:0;} 36%{opacity:1;} 100%{ transform:translate(calc(-50% + var(--sx)), var(--sy)) scale(1); opacity:0;} }
+  .bub{ position:absolute; bottom:-20px; border-radius:50%; z-index:1;
+    background:radial-gradient(circle at 35% 30%, rgba(251,232,176,.9), rgba(217,165,60,.5)); animation:cbub linear forwards; }
+  @keyframes cbub{ to{ transform:translateY(-110vh); opacity:0; } }
+  @media (prefers-reduced-motion: reduce){
+    .cele-card{ animation:none; } .balloon,.confetti,.cork,.spray,.bub{ display:none; }
+  }
+  .hero:focus-visible,.card:focus-visible{ outline:2px solid var(--gold-hi); outline-offset:3px; }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <header class="masthead">
+    <img src="logo.png" alt="Cooney Provisions, Est. 1983">
+    <div class="gold-rule"></div>
+    <div class="portal-label">Driver Portal</div>
+  </header>
+
+  <div class="band">
+    <span class="hello" id="greeting">Welcome</span>
+    <span class="today" id="todayLine"></span>
+  </div>
+
+  <a class="hero" id="hero"></a>
+
+  <ul class="grid" id="grid"></ul>
+
+  <footer class="footer">
+    <span class="est">Est. 1983</span>
+    <div class="sub">3620 Schuylkill Road &middot; Spring City, PA 19475</div>
+  </footer>
+
+</div>
+
+<div class="cele-overlay" id="celeOv"></div>
+
+<script>
+/* =============================================================
+   APP LIST. The only part you edit day to day.
+   name / desc / url / icon (file in icons/) / feature (one true)
+   url = PASTE_URL_HERE  -> tile shows dimmed Coming Soon
+   ============================================================= */
+const APPS = [
+  { name:'Pull Sheet', desc:'Send in today\u2019s order from your phone',
+    url:'https://script.google.com/macros/s/AKfycbyZVI8If19QMispZJcFCMYJwFv2yySJBNYRTYuyB6yESJZOEZgXsdnztKNoPHpuzGpGwg/exec',
+    icon:'icons/pullsheet.png', heroImage:'icons/pullsheet_wide.png', feature:true },
+
+  { name:'Driver Log', desc:'Daily log and the DOT view',
+    url:'https://script.google.com/macros/s/AKfycbyIHIMZcy71PtGsn_Do46L93v0eLziN9_fl4B6MZEL9Ow6L0M8R_pw7Xh6UnGsaByiG/exec',
+    icon:'icons/driverlog.png' },
+
+  { name:'Floater Schedule', desc:'Who is riding with who',
+    url:'https://docs.google.com/spreadsheets/d/1L9hBxeWPhDib8OK_3FRGlEGWfhpEAJB94LSpMQHKZjE/edit?gid=897811953#gid=897811953',
+    icon:'icons/schedule.png' },
+
+  { name:'Special Order Sheet', desc:'Weekly specials, due Monday by 3:00 PM',
+    url:'https://script.google.com/macros/s/AKfycbwm38TwFbgWWy5HvWznU0-uBCTR6lwStoOPIPjcv_pDlJFV2lXEfBKsyIDEewIiGGOtBQ/exec',
+    icon:'icons/specialorder.png' },
+
+  { name:'PTO Requests', desc:'Ask for time off, check your days',
+    url:'https://docs.google.com/forms/d/e/1FAIpQLScKU0zInokQwj8Y13bOu2fXuaqVTfE4Y9nJ4NejQ9r-B-Dh7g/viewform',
+    icon:'icons/pto.png' }
+];
+
+/* ---- Eastern-time greeting ---- */
+function easternNow(){
+  const parts = new Intl.DateTimeFormat('en-US',{ timeZone:'America/New_York',
+    weekday:'long', month:'long', day:'numeric', hour:'numeric', hour12:false }).formatToParts(new Date());
+  const g = t => parts.find(p=>p.type===t).value;
+  return { weekday:g('weekday'), month:g('month'), day:g('day'), hour:parseInt(g('hour'),10) };
+}
+const now = easternNow();
+let hello='Good evening'; if(now.hour<12) hello='Good morning'; else if(now.hour<17) hello='Good afternoon';
+document.getElementById('greeting').textContent = hello;
+document.getElementById('todayLine').textContent = now.weekday+', '+now.month+' '+now.day;
+
+const isLive = u => u && u.indexOf('PASTE_URL_HERE')===-1;
+function setLink(el, app){
+  if(isLive(app.url)){ el.href=app.url; el.target='_blank'; el.rel='noopener'; }
+  else { el.setAttribute('aria-disabled','true'); }
+}
+
+/* ---- featured hero (wide banner) ---- */
+const feat = APPS.find(a=>a.feature) || APPS[0];
+const hero = document.getElementById('hero');
+setLink(hero, feat);
+hero.innerHTML = '<img src="'+(feat.heroImage || feat.icon)+'" alt="'+feat.name+'">';
+
+/* ---- grid (everything not featured) ---- */
+const grid = document.getElementById('grid');
+APPS.filter(a=>a!==feat).forEach((app,i)=>{
+  const li=document.createElement('li');
+  const a=document.createElement('a');
+  const hasIcon = app.icon && app.icon.length>0;
+  const live = isLive(app.url) && hasIcon;   // a tile is "ready" only with art AND a url
+  a.className='card'+(live?'':' soon');
+  if(live){ setLink(a, app); } else { a.setAttribute('aria-disabled','true'); }
+
+  let badge='';
+  if(!hasIcon) badge='<span class="badge">Icon coming</span>';
+  else if(!isLive(app.url)) badge='<span class="badge">Coming soon</span>';
+  else if(app.name.indexOf('Special Order')>-1 && now.weekday==='Monday') badge='<span class="badge">Due 3:00 PM</span>';
+
+  const art = hasIcon
+    ? '<div class="card-art"><img src="'+app.icon+'" alt="'+app.name+'"></div>'
+    : '<div class="frame-empty"><span class="mark">CP</span></div>';
+
+  a.innerHTML = badge + art +
+    '<div class="card-name">'+app.name+'</div>'+
+    '<div class="card-desc">'+app.desc+'</div>';
+  a.style.animationDelay = (1.1 + i*0.1)+'s';
+  li.appendChild(a); grid.appendChild(li);
+});
+
+/* =============================================================
+   CELEBRATIONS ENGINE
+   Calls the Apps Script service, asks who is celebrating today,
+   and shows a popup for each one. Shows each person once per day
+   per phone (remembered in this browser, never on a server).
+
+   TO POINT AT A NEW SERVICE: change CELEBRATIONS_URL below.
+   ============================================================= */
+const CELEBRATIONS_URL = 'https://script.google.com/macros/s/AKfycbyfHnvXxyczSxjLiBx1QrBXyL2NQ4wvc4kxOoq1YxO2ZJujW-nhjRojbFYD90UbpCo/exec';
+
+(function(){
+  const ov = document.getElementById('celeOv');
+  const bc = ['#A31313','#D9A53C','#F3C75F','#7A1A1A','#E8BE5C','#5E0D0D'];
+  const cc = ['#F3C75F','#A31313','#D9A53C','#F4ECDD','#E8BE5C'];
+
+  function todayKey(){
+    const p = new Intl.DateTimeFormat('en-CA',{ timeZone:'America/New_York',
+      year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date());
+    return p.find(x=>x.type==='year').value+'-'+p.find(x=>x.type==='month').value+'-'+p.find(x=>x.type==='day').value;
+  }
+
+  function seenList(){
+    try { return JSON.parse(localStorage.getItem('celeSeen')||'{}'); } catch(e){ return {}; }
+  }
+  function markSeen(map){
+    try { localStorage.setItem('celeSeen', JSON.stringify(map)); } catch(e){}
+  }
+
+  let queue = [];
+  function next(){
+    ov.innerHTML=''; ov.classList.remove('show');
+    if(!queue.length) return;
+    const c = queue.shift();
+    ov.classList.add('show');
+    if(c.type==='bday') bday(c); else anniv(c);
+  }
+
+  function bday(c){
+    const card=document.createElement('div'); card.className='cele-card bday';
+    card.innerHTML =
+      '<div class="cele-emoji bob">🎂</div>'+
+      '<div class="cele-kicker">Cooney Provisions</div>'+
+      '<div class="cele-name">Happy Birthday,<br>'+c.name+'!</div>'+
+      '<div class="cele-msg">The whole crew wishes you a great one. Have a good day out there!</div>'+
+      '<span class="cele-close">Let\u2019s Go</span>';
+    ov.appendChild(card);
+    card.querySelector('.cele-close').onclick=next;
+    for(let i=0;i<14;i++){ const b=document.createElement('div'); b.className='balloon'; b.style.background=bc[i%bc.length];
+      b.style.left=(Math.random()*92)+'%'; b.style.setProperty('--drift',(Math.random()*80-40)+'px');
+      b.style.animationDuration=(4.5+Math.random()*3)+'s'; b.style.animationDelay=(Math.random()*2.5)+'s'; ov.appendChild(b); }
+    for(let i=0;i<42;i++){ const f=document.createElement('div'); f.className='confetti'; f.style.background=cc[i%cc.length];
+      f.style.left=(Math.random()*100)+'%'; f.style.animationDuration=(2.5+Math.random()*2.5)+'s'; f.style.animationDelay=(Math.random()*2.5)+'s';
+      if(i%3===0) f.style.borderRadius='50%'; ov.appendChild(f); }
+  }
+
+  function anniv(c){
+    const card=document.createElement('div'); card.className='cele-card anniv';
+    const hasYears = (c.years !== null && c.years !== undefined && !isNaN(c.years) && c.years > 0);
+    const yearBlock = hasYears
+      ? '<div class="cele-years">'+c.years+'</div><div class="cele-years-label">'+(c.years===1?'Year':'Years')+' Strong</div>'
+      : '';
+    const msg = hasYears
+      ? c.years+' years with the crew. Thanks for everything you do, here\u2019s to many more!'
+      : 'Thanks for everything you do. Here\u2019s to many more!';
+    card.innerHTML =
+      '<div class="cele-emoji shake">🍾</div>'+
+      '<div class="cele-kicker">Cooney Provisions</div>'+
+      '<div class="cele-name cream">Congratulations, '+c.name+'!</div>'+
+      yearBlock+
+      '<div class="cele-msg">'+msg+'</div>'+
+      '<span class="cele-close">Cheers!</span>';
+    ov.appendChild(card);
+    card.querySelector('.cele-close').onclick=next;
+    const cork=document.createElement('div'); cork.className='cork'; ov.appendChild(cork);
+    for(let i=0;i<26;i++){ const s=document.createElement('div'); s.className='spray';
+      const ang=(-140+Math.random()*100)*Math.PI/180; const dist=120+Math.random()*160;
+      s.style.setProperty('--sx',(Math.cos(ang)*dist)+'px'); s.style.setProperty('--sy',(Math.sin(ang)*dist)+'px');
+      s.style.animationDelay=(Math.random()*0.4)+'s'; s.style.animationDuration=(2.4+Math.random()*0.6)+'s'; ov.appendChild(s); }
+    for(let i=0;i<22;i++){ const b=document.createElement('div'); b.className='bub';
+      const sz=4+Math.random()*9; b.style.width=sz+'px'; b.style.height=sz+'px';
+      b.style.left=(Math.random()*100)+'%'; b.style.animationDuration=(3.5+Math.random()*3)+'s';
+      b.style.animationDelay=(Math.random()*2.5)+'s'; ov.appendChild(b); }
+  }
+
+  function run(data){
+    const key = todayKey();
+    const seen = seenList();
+    const seenToday = seen[key] || [];
+    const fresh = [];
+
+    (data.birthdays||[]).forEach(b=>{
+      const id='b:'+b.name;
+      if(seenToday.indexOf(id)===-1){ fresh.push({type:'bday', name:b.name}); seenToday.push(id); }
+    });
+    (data.anniversaries||[]).forEach(a=>{
+      const id='a:'+a.name;
+      if(seenToday.indexOf(id)===-1){ fresh.push({type:'anniv', name:a.name, years:a.years}); seenToday.push(id); }
+    });
+
+    if(!fresh.length) return;
+    markSeen({ [key]: seenToday });   // keep only today; old days drop off
+    queue = fresh;
+    setTimeout(next, 1500);           // let the portal finish its load animation first
+  }
+
+  fetch(CELEBRATIONS_URL)
+    .then(r=>r.json())
+    .then(run)
+    .catch(()=>{ /* service unreachable: portal just opens normally, no popup */ });
+})();
+</script>
+
+</body>
+</html>
