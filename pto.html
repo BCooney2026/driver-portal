@@ -277,6 +277,9 @@
     ["Tim M","Floater"],["Tim S","Driver"],["Tom Z","Warehouse"],["Zak H","Floater"],["Brett H","Floater"]];
   var HOLIDAY_RANGES=[["2026-06-29","2026-07-03","Fourth of July week"],["2026-12-21","2026-12-25","Christmas week"]];
 
+  // PTO backend endpoint (Apps Script web app /exec). If the deployment URL
+  // ever changes, update this one line.
+  var PTO_ENDPOINT='https://script.google.com/a/macros/cooneyprovisions.com/s/AKfycbxIDt1zlWFjSLdZnrGEIO-l_AeIUthk-xMSFiR0-Ezt_5wWiafgtjduhqWxoMogCSJ8/exec';
   var deptSel=document.getElementById('dept'), empSel=document.getElementById('emp');
   deptSel.addEventListener('change',function(){
     var d=deptSel.value; empSel.innerHTML='';
@@ -333,6 +336,9 @@
   scrim.addEventListener('click',function(e){if(e.target===scrim)scrim.classList.remove('show');});
   document.getElementById('submitBtn').addEventListener('click',function(){
     scrim.classList.remove('show');
+    // Send the request to the PTO backend. Fire and forget, no-cors,
+    // text/plain so the browser does not fire a CORS preflight.
+    try{fetch(PTO_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({employee:empSel.value,department:deptSel.value,deptAnswer:elseVal||'',start:startEl.value,end:endEl.value})});}catch(err){}
     var cal=calendarDays(startEl.value,endEl.value),sameDay=startEl.value===endEl.value;
     document.getElementById('doneRecap').innerHTML=
       row('Name',empSel.value)+row('Dates',sameDay?fmt(startEl.value):fmt(startEl.value)+' \u2013 '+fmt(endEl.value))+
