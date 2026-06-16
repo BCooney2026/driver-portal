@@ -173,7 +173,7 @@
 </head>
 <body>
 <div class="atmos" aria-hidden="true">
-  <video class="bgvid" autoplay muted loop playsinline preload="auto" poster="">
+  <video class="bgvid" autoplay muted playsinline preload="auto" poster="">
     <source src="https://bcooney2026.github.io/driver-portal/beach_web.mp4" type="video/mp4">
   </video>
   <div class="veil"></div>
@@ -255,15 +255,17 @@
 </div>
 
 <script>
-  /* iOS background-video nudge: force load + play, retry on interaction */
+  /* iOS background-video nudge: force load + play once, freeze on last frame */
   (function(){
     var v=document.querySelector('.bgvid'); if(!v) return;
     v.muted=true; v.defaultMuted=true; v.setAttribute('muted','');
-    v.playsInline=true;
+    v.playsInline=true; v.loop=false;
     function go(){ try{ v.load && v.load(); }catch(e){} var p=v.play(); if(p&&p.catch) p.catch(function(){ setTimeout(function(){ var q=v.play(); if(q&&q.catch)q.catch(function(){});},400); }); }
     if(document.readyState==='complete') go(); else window.addEventListener('load', go);
     document.addEventListener('touchend', go, {once:true});
     document.addEventListener('click', go, {once:true});
+    /* hold on the final frame: when it ends, pin to just before the end so it never blanks or restarts */
+    v.addEventListener('ended', function(){ try{ v.pause(); v.currentTime = Math.max(0, (v.duration||0) - 0.05); }catch(e){} });
   })();
 </script>
 <script>
