@@ -308,15 +308,17 @@
   function overlapsHoliday(s,e){var a=new Date(s+'T00:00:00'),b=new Date(e+'T00:00:00');for(var i=0;i<HOLIDAY_RANGES.length;i++){var hs=new Date(HOLIDAY_RANGES[i][0]+'T00:00:00'),he=new Date(HOLIDAY_RANGES[i][1]+'T00:00:00');if(a<=he&&hs<=b)return HOLIDAY_RANGES[i][2];}return null;}
   function updatePanel(){
     var s=startEl.value,e=endEl.value; daysPanel.classList.remove('show','err');
-    if(s&&e){var cal=calendarDays(s,e);
-      if(cal<0){daysPanel.classList.add('show','err');calN.textContent='!';calSub.textContent='check dates';return;}
-      daysPanel.classList.add('show');calN.textContent=cal;calSub.textContent=cal===1?'single day':'first day through last';}
+    if(s&&e){var span=calendarDays(s,e);
+      if(span<0){daysPanel.classList.add('show','err');calN.textContent='!';calSub.textContent='check dates';return;}
+      var pto=ptoDays(s,e);
+      daysPanel.classList.add('show');calN.textContent=pto;
+      calSub.textContent=pto===0?'no workdays in range':(pto===1?'workday (weekends free)':'workdays (weekends free)');}
   }
   startEl.addEventListener('change',function(){if(startEl.value&&!endEl.value)endEl.value=startEl.value;updatePanel();validate();});
   endEl.addEventListener('change',function(){updatePanel();validate();});
 
   var reviewBtn=document.getElementById('reviewBtn');
-  function validate(){reviewBtn.disabled=!(deptSel.value&&empSel.value&&startEl.value&&endEl.value&&elseVal&&calendarDays(startEl.value,endEl.value)>=1);}
+  function validate(){reviewBtn.disabled=!(deptSel.value&&empSel.value&&startEl.value&&endEl.value&&elseVal&&ptoDays(startEl.value,endEl.value)>=1);}
 
   var scrim=document.getElementById('scrim');
   function fmt(d){var x=new Date(d+'T00:00:00');return x.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});}
@@ -331,17 +333,17 @@
     return '<div class="quip">'+ic+'<div>'+text+'</div></div>';
   }
   reviewBtn.addEventListener('click',function(){
-    var cal=calendarDays(startEl.value,endEl.value),sameDay=startEl.value===endEl.value;
+    var cal=calendarDays(startEl.value,endEl.value),pto=ptoDays(startEl.value,endEl.value),sameDay=startEl.value===endEl.value;
     document.getElementById('reviewSummary').innerHTML=
       row('Name',empSel.value)+row('Department',deptSel.value)+
       row('Dates',sameDay?fmt(startEl.value):fmt(startEl.value)+' \u2013 '+fmt(endEl.value))+
-      rowBig('Total Days Requested',cal+(cal===1?' day':' days'));
+      rowBig('Total Days Requested',pto+(pto===1?' day':' days'));
     var wz=document.getElementById('warnZone');wz.innerHTML='';
-    if(cal===2){
+    if(pto===2){
       wz.innerHTML+=warn('amber','Double-check the span','Two days, '+fmt(startEl.value)+' through '+fmt(endEl.value)+'. If you only meant to request 1 day, tap back and set both dates the same date. If two\'s right, send it.');
-    }else if(cal===1){
+    }else if(pto===1){
       wz.innerHTML+=quip('One day. Gas up, clock out, we\'ve got you covered.');
-    }else if(cal>=3){
+    }else if(pto>=3){
       wz.innerHTML+=quip('That\'s a proper break. Disappear, recharge, come back with stories.');
     }
     var hol=overlapsHoliday(startEl.value,endEl.value);
@@ -356,10 +358,10 @@
     // Send the request to the PTO backend. Fire and forget, no-cors,
     // text/plain so the browser does not fire a CORS preflight.
     try{fetch(PTO_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({employee:empSel.value,department:deptSel.value,deptAnswer:elseVal||'',start:startEl.value,end:endEl.value})});}catch(err){}
-    var cal=calendarDays(startEl.value,endEl.value),sameDay=startEl.value===endEl.value;
+    var pto=ptoDays(startEl.value,endEl.value),sameDay=startEl.value===endEl.value;
     document.getElementById('doneRecap').innerHTML=
       row('Name',empSel.value)+row('Dates',sameDay?fmt(startEl.value):fmt(startEl.value)+' \u2013 '+fmt(endEl.value))+
-      rowBig('Total Days Requested',cal+(cal===1?' day':' days'));
+      rowBig('Total Days Requested',pto+(pto===1?' day':' days'));
     document.getElementById('formCard').style.display='none';
     document.getElementById('doneCard').classList.add('show');
     window.scrollTo({top:0,behavior:'smooth'});
