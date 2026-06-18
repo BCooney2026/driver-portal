@@ -206,8 +206,8 @@
         <label class="flabel" for="dept">Your department</label>
         <select class="control" id="dept">
           <option value="" disabled selected>Select department</option>
-          <option>Driver</option><option>Sales</option><option>Office</option>
-          <option>Warehouse</option><option>Floater</option>
+          <option>Driver</option><option>Backup Driver</option><option>Sales</option><option>Office</option>
+          <option>Warehouse</option><option>Helpers</option>
         </select>
       </div>
 
@@ -276,12 +276,12 @@
   })();
 </script>
 <script>
-  var EMPLOYEES=[["Alan E","Sales"],["Andy P","Sales"],["Billy D","Sales"],["Bob K","Floater"],
-    ["Bob R","Driver"],["Carlos L","Driver"],["Chris M","Driver"],["Deanna C","Office"],
-    ["Eric L","Driver"],["Frankie B","Floater"],["Jason W","Driver"],["Jess L","Office"],
+  var EMPLOYEES=[["Alan E","Sales"],["Andy P","Sales"],["Billy D","Sales"],["Bob K","Driver"],
+    ["Carlos L","Driver"],["Chris M","Driver"],["Deanna C","Office"],
+    ["Eric L","Driver"],["Frankie B","Backup Driver"],["Jason W","Driver"],["Jess L","Office"],
     ["John S","Warehouse"],["Larry L","Sales"],["Mark Y","Driver"],["Mike Cooney Jr","Office"],
-    ["Mike F","Floater"],["Mike K","Driver"],["Mike R","Driver"],["Scott R","Sales"],
-    ["Tim M","Floater"],["Tim S","Driver"],["Tom Z","Warehouse"],["Zak H","Floater"],["Brett H","Floater"]];
+    ["Mike F","Backup Driver"],["Mike K","Driver"],["Mike R","Driver"],["Scott R","Sales"],
+    ["Tim M","Helpers"],["Tim S","Driver"],["Tom Z","Warehouse"],["Zak H","Helpers"],["Brett H","Helpers"]];
   var HOLIDAY_RANGES=[["2026-06-29","2026-07-03","Fourth of July week"],["2026-12-21","2026-12-25","Christmas week"]];
 
   // PTO backend endpoint (Apps Script web app /exec). If the deployment URL
