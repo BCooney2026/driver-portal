@@ -314,7 +314,15 @@
       daysPanel.classList.add('show');calN.textContent=pto;
       calSub.textContent=pto===0?'no workdays in range':(pto===1?'workday (weekends free)':'workdays (weekends free)');}
   }
-  startEl.addEventListener('change',function(){if(startEl.value&&!endEl.value)endEl.value=startEl.value;updatePanel();validate();});
+  startEl.addEventListener('change',function(){
+    if(startEl.value){
+      endEl.min=startEl.value;
+      // Mirror the start into the end whenever the end is empty or now earlier
+      // than the start. A deliberate later end date is left alone.
+      if(!endEl.value||endEl.value<startEl.value)endEl.value=startEl.value;
+    }
+    updatePanel();validate();
+  });
   endEl.addEventListener('change',function(){updatePanel();validate();});
 
   var reviewBtn=document.getElementById('reviewBtn');
