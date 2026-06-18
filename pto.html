@@ -181,16 +181,14 @@
 </head>
 <body>
 <div class="atmos" aria-hidden="true">
-  <video class="bgvid" autoplay muted playsinline preload="auto" poster="">
-    <source src="https://bcooney2026.github.io/driver-portal/beach_web.mp4" type="video/mp4">
-  </video>
+  <video class="bgvid" autoplay muted playsinline preload="auto" poster=""></video>
   <div class="veil"></div>
 </div>
 <div class="preview-flag">Preview - sample data, nothing is submitted</div>
 
 <div class="wrap" style="margin-top:26px">
   <div class="masthead">
-   
+    <img src="https://raw.githubusercontent.com/BCooney2026/cooney-sms/main/Logo.png" alt="Cooney Provisions">
     <div class="rule"><span class="diamond"></span></div>
   </div>
 
@@ -263,9 +261,42 @@
 </div>
 
 <script>
-  /* iOS background-video nudge: force load + play once, freeze on last frame */
+  /* ===== background video rotation =====
+     One clip is picked at random each time the form is opened. Only the chosen
+     clip is downloaded by the phone; the others are never fetched, so the list
+     can be long with no load cost per visit. All clips live in the driver-portal
+     repo and are served by GitHub Pages (NOT raw.githubusercontent, which iOS
+     refuses to play). To add or remove a clip, just edit this list. */
+  var BG_VIDEOS=[
+    'sunsetbeach_web.mp4','shoreline_web.mp4','tiki_web.mp4','mountains_web.mp4',
+    'fields_web.mp4','forest_web.mp4','vacation_web.mp4','smoke_web.mp4',
+    'waterfall_web.mp4','bridge_web.mp4','glacier_web.mp4','sandstorm_web.mp4',
+    'city_web.mp4','beachfoam_web.mp4'
+  ];
+  var BG_BASE='https://bcooney2026.github.io/driver-portal/';
+  // Light, reliable clip used if the random pick somehow fails to load.
+  var BG_FALLBACK='mountains_web.mp4';
+
+  /* iOS background-video nudge: set a random source, force load + play once,
+     freeze on the last frame */
   (function(){
     var v=document.querySelector('.bgvid'); if(!v) return;
+
+    var pick=BG_VIDEOS[Math.floor(Math.random()*BG_VIDEOS.length)] || BG_FALLBACK;
+    var src=document.createElement('source');
+    src.src=BG_BASE+pick; src.type='video/mp4';
+    v.appendChild(src);
+    // If the chosen clip errors out, swap to the known-good fallback once.
+    var swapped=false;
+    v.addEventListener('error', function(){
+      if(swapped) return; swapped=true;
+      v.innerHTML='';
+      var f=document.createElement('source');
+      f.src=BG_BASE+BG_FALLBACK; f.type='video/mp4';
+      v.appendChild(f);
+      try{ v.load(); var p=v.play(); if(p&&p.catch)p.catch(function(){}); }catch(e){}
+    }, true);
+
     v.muted=true; v.defaultMuted=true; v.setAttribute('muted','');
     v.playsInline=true; v.loop=false;
     function go(){ try{ v.load && v.load(); }catch(e){} var p=v.play(); if(p&&p.catch) p.catch(function(){ setTimeout(function(){ var q=v.play(); if(q&&q.catch)q.catch(function(){});},400); }); }
