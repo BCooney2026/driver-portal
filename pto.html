@@ -154,6 +154,7 @@
     background:linear-gradient(180deg,var(--gold-bright),var(--gold-deep));border:1px solid var(--gold-bright);border-radius:9px;padding:14px;cursor:pointer;
     box-shadow:0 8px 18px -8px rgba(199,154,59,.6)}
   .btn-solid:active,.btn-ghost:active{transform:translateY(1px)}
+  .btn-solid:disabled{background:linear-gradient(180deg,#5a5048,#3e372f);border-color:#4a423a;color:#8c8278;cursor:not-allowed;box-shadow:none;transform:none}
 
   /* ===== quip card: shown for 1-day or 3+ day requests ===== */
   .quip{display:flex;gap:11px;align-items:flex-start;padding:14px 15px;border-radius:9px;margin-top:12px;
@@ -282,7 +283,27 @@
     ["John S","Warehouse"],["Larry L","Sales"],["Mark Y","Driver"],["Mike Cooney Jr","Office"],
     ["Mike F","Backup Driver"],["Mike K","Driver"],["Mike R","Driver"],["Scott R","Sales"],
     ["Tim M","Helpers"],["Tim S","Driver"],["Tom Z","Warehouse"],["Zak H","Helpers"],["Brett H","Helpers"]];
-  var HOLIDAY_RANGES=[["2026-06-29","2026-07-03","Fourth of July week"],["2026-12-21","2026-12-25","Christmas week"]];
+  // Holiday closure weeks are loaded live from the backend (Holiday Weeks tab)
+  // on page load, so adding future years to the sheet updates the form with no
+  // change here. Starts empty and fills in once the fetch returns. Until it
+  // loads, overlapsHoliday() simply finds nothing, the fetch is fast and runs
+  // immediately on load, well before anyone has filled out a date.
+  var HOLIDAY_RANGES=[];
+
+  // The PUBLIC web app URL (/macros/s/.../exec) for reading the holiday list.
+  // This must be the same deployment as Code.gs WEB_APP_URL. The holiday GET is
+  // read-only and returns JSON.
+  var HOLIDAY_FETCH_URL='https://script.google.com/macros/s/AKfycbxIDt1zlWFjSLdZnrGEIO-l_AeIUthk-xMSFiR0-Ezt_5wWiafgtjduhqWxoMogCSJ8/exec?action=holidays';
+
+  // Load holiday ranges as soon as the page opens. If it fails, the array stays
+  // empty (holiday blocking is skipped) but the rest of the form works; the
+  // failure is logged to the console for debugging.
+  (function loadHolidays(){
+    fetch(HOLIDAY_FETCH_URL)
+      .then(function(r){return r.json();})
+      .then(function(data){ if(Array.isArray(data)) HOLIDAY_RANGES=data; })
+      .catch(function(err){ console.log('Holiday list load failed:', err); });
+  })();
 
   // PTO backend endpoint (Apps Script web app /exec). If the deployment URL
   // ever changes, update this one line.
@@ -355,13 +376,22 @@
       wz.innerHTML+=quip('That\'s a proper break. Disappear, recharge, come back with stories.');
     }
     var hol=overlapsHoliday(startEl.value,endEl.value);
-    if(hol){wz.innerHTML+=warn('amber','Holiday week','These dates land in <b>'+hol+'</b>. The shop may already be closed part of that week, so you might not need to burn PTO on all of it.');}
+    var submitBtn=document.getElementById('submitBtn');
+    if(hol){
+      wz.innerHTML+=warn('red','Holiday week \u2013 closed','These dates land in <b>'+hol+'</b>, when the shop is closed. PTO can\'t be requested for a holiday week. Tap back and pick dates outside it.');
+      submitBtn.disabled=true;
+    }else{
+      submitBtn.disabled=false;
+    }
     if(elseVal==='Yes'){wz.innerHTML+=warn('red','Coverage overlap','You flagged someone else in <b>'+deptSel.value+'</b> off then. Brian sorts the coverage. You can still send it.');}
     scrim.classList.add('show');
   });
   document.getElementById('backBtn').addEventListener('click',function(){scrim.classList.remove('show');});
   scrim.addEventListener('click',function(e){if(e.target===scrim)scrim.classList.remove('show');});
   document.getElementById('submitBtn').addEventListener('click',function(){
+    // Backstop: never submit a request that overlaps a closed holiday week,
+    // even if the button somehow fired.
+    if(overlapsHoliday(startEl.value,endEl.value))return;
     scrim.classList.remove('show');
     // Send the request to the PTO backend. Fire and forget, no-cors,
     // text/plain so the browser does not fire a CORS preflight.
