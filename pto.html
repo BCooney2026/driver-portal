@@ -348,6 +348,51 @@
   });
   empSel.addEventListener('change',validate);
 
+  /* =============================================================
+     IDENTITY PRE-FILL FROM THE PORTAL
+     The portal appends ?dept=<dept>&emp=<nickname> when it knows who
+     is signed in. Read those here and pre-select the department (which
+     populates the name list) then the name. If either does not match an
+     existing option, do nothing and the normal dropdowns stay in play.
+     Touches only the two dropdowns; everything else is unchanged. This
+     runs after deptSel/empSel and their change listeners are defined, so
+     selecting the department fires the same handler that builds the name
+     list, exactly as a human tap would.
+     ============================================================= */
+  (function prefillFromUrl(){
+    function param(n){
+      try{
+        var m = new RegExp('[?&]' + n + '=([^&]+)').exec(window.location.search);
+        return m ? decodeURIComponent(m[1].replace(/\+/g,' ')) : '';
+      }catch(e){ return ''; }
+    }
+    var wantDept = param('dept').trim();
+    var wantEmp  = param('emp').trim();
+    if(!wantDept || !wantEmp) return;
+
+    // Department must be a real option on this form.
+    var deptOk = false;
+    for(var i=0;i<deptSel.options.length;i++){
+      if(deptSel.options[i].value === wantDept){ deptOk = true; break; }
+    }
+    if(!deptOk) return;
+
+    // Select the department and fire its change handler so the name list builds.
+    deptSel.value = wantDept;
+    deptSel.dispatchEvent(new Event('change'));
+
+    // Now the name list is populated for that department. Select the name only
+    // if it actually exists in the list; otherwise leave the placeholder.
+    var empOk = false;
+    for(var j=0;j<empSel.options.length;j++){
+      if(empSel.options[j].value === wantEmp){ empOk = true; break; }
+    }
+    if(empOk){
+      empSel.value = wantEmp;
+      empSel.dispatchEvent(new Event('change'));
+    }
+  })();
+
   var elseVal=null;
   document.querySelectorAll('#elseSeg button').forEach(function(b){
     b.addEventListener('click',function(){document.querySelectorAll('#elseSeg button').forEach(function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');elseVal=b.dataset.v;validate();});
