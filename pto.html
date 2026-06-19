@@ -178,6 +178,34 @@
   .preview-flag{position:fixed;top:0;left:0;right:0;background:#160a08;color:var(--gold);
     font-family:'Barlow Semi Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;
     font-size:10px;text-align:center;padding:5px;z-index:99;border-bottom:1px solid var(--gold-deep)}
+
+  /* ===== identity badge: shown when the portal passes a known driver ===== */
+  .idcard{display:none;margin-bottom:13px;border-radius:11px;position:relative;overflow:hidden;
+    background:linear-gradient(180deg,#2b1712,#1d0f0c);
+    border:1px solid var(--gold-deep);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.05), 0 8px 22px -12px rgba(0,0,0,.7)}
+  .idcard.show{display:block}
+  .idcard::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--gold) 22%,var(--gold-bright) 50%,var(--gold) 78%,transparent);
+    opacity:.85;animation:idsheen 3.2s ease-in-out infinite}
+  @keyframes idsheen{0%,100%{opacity:.4}50%{opacity:.95}}
+  .idcard .inner{display:flex;align-items:center;gap:14px;padding:15px 16px}
+  .idcard .crestwrap{flex:none;width:46px;height:46px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 50% 35%,#3a1e15,#180b08);
+    border:1px solid var(--gold-deep);
+    box-shadow:inset 0 0 14px rgba(199,154,59,.25), 0 4px 12px -6px rgba(0,0,0,.7)}
+  .idcard .crestwrap svg{width:24px;height:24px;display:block}
+  .idcard .idtext{flex:1;min-width:0}
+  .idcard .eyebrow2{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;
+    letter-spacing:.2em;text-transform:uppercase;font-size:10.5px;color:var(--brass);margin-bottom:2px}
+  .idcard .idname{font-family:'Cinzel',serif;font-weight:700;font-size:22px;line-height:1.05;
+    color:var(--gold-bright);text-shadow:0 2px 12px rgba(199,154,59,.35)}
+  .idcard .notyou{margin-top:5px}
+  .idcard .notyou a{font-family:'Barlow',sans-serif;font-size:12px;font-weight:600;color:var(--brass);
+    text-decoration:none;border-bottom:1px dashed rgba(184,146,74,.55);cursor:pointer}
+  .idcard .notyou a:active{color:var(--gold-bright)}
+
 </style>
 </head>
 <body>
@@ -202,7 +230,22 @@
     <div class="card-head"><span class="tag">Request</span><h2>Time Off</h2></div>
     <div class="card-body">
 
-      <div class="field">
+      <!-- Fire identity badge: shown when the portal passed a known driver. -->
+      <div class="idcard" id="idCard">
+        <div class="inner">
+          <div class="crestwrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#e8c466" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <div class="idtext">
+            <div class="eyebrow2">Requesting time off as</div>
+            <div class="idname" id="idName">Tim S</div>
+            <div class="notyou"><a id="notYouLink">Not you? Tap to pick a name</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Department + name dropdowns. Hidden as a pair when the badge shows. -->
+      <div class="field" id="deptField">
         <label class="flabel" for="dept">Your department</label>
         <select class="control" id="dept">
           <option value="" disabled selected>Select department</option>
@@ -211,7 +254,7 @@
         </select>
       </div>
 
-      <div class="field">
+      <div class="field" id="empField">
         <label class="flabel" for="emp">Your name</label>
         <select class="control" id="emp" disabled>
           <option value="" disabled selected>Pick a department first</option>
@@ -390,6 +433,33 @@
     if(empOk){
       empSel.value = wantEmp;
       empSel.dispatchEvent(new Event('change'));
+
+      // Identity confirmed: swap the two dropdowns for the fire badge.
+      var idCard = document.getElementById('idCard');
+      var idName = document.getElementById('idName');
+      var deptField = document.getElementById('deptField');
+      var empField = document.getElementById('empField');
+      if(idCard && idName && deptField && empField){
+        idName.textContent = wantEmp;
+        deptField.style.display = 'none';
+        empField.style.display = 'none';
+        idCard.classList.add('show');
+      }
+
+      // "Not you?" escape hatch: restore the dropdowns, hide the badge, clear
+      // the auto-picked name so the person can choose. Department stays set so
+      // the name list is already populated; they can change it if needed.
+      var notYou = document.getElementById('notYouLink');
+      if(notYou){
+        notYou.addEventListener('click', function(){
+          idCard.classList.remove('show');
+          deptField.style.display = '';
+          empField.style.display = '';
+          empSel.value = '';
+          empSel.dispatchEvent(new Event('change'));
+          validate();
+        });
+      }
     }
   })();
 
