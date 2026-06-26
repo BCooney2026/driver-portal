@@ -250,7 +250,7 @@
         <select class="control" id="dept">
           <option value="" disabled selected>Select department</option>
           <option>Driver</option><option>Backup Driver</option><option>Sales</option><option>Office</option>
-          <option>Warehouse</option><option>Helpers</option>
+          <option>Warehouse</option>
         </select>
       </div>
 
@@ -350,13 +350,12 @@
   })();
 </script>
 <script>
-  var EMPLOYEES=[["Tim S","Driver"],["Bob K","Driver"],["Mike R","Driver"],["Eric L","Driver"],
-    ["Carlos L","Driver"],["Chris M","Driver"],["Mike K","Driver"],["Jason W","Driver"],["Mark Y","Driver"],
-    ["Alan E","Sales"],["Andy P","Sales"],["Billy D","Sales"],["Deanna C","Office"],
-    ["Frankie B","Backup Driver"],["Jess L","Office"],
-    ["John S","Warehouse"],["Larry L","Sales"],["Mike Cooney Jr","Office"],
-    ["Mike F","Backup Driver"],["Scott R","Sales"],
-    ["Tim M","Helpers"],["Tom Z","Warehouse"],["Brett H","Helpers"]];
+  var EMPLOYEES=[
+    ["Tim S","Driver"],["Bob K","Driver"],["Mike R","Driver"],["Eric L","Driver"],["Carlos L","Driver"],["Chris M","Driver"],["Mike K","Driver"],["Jason W","Driver"],["Mark Y","Driver"],
+    ["Frankie B","Backup Driver"],["Mike F","Backup Driver"],["Brett H","Backup Driver"],["Tim M","Backup Driver"],
+    ["Al E","Sales"],["Andy P","Sales"],["Bill D","Sales"],["Larry L","Sales"],["Scott R","Sales"],
+    ["Dee C","Office"],["Jess L","Office"],["Juniors Jr","Office"],
+    ["Tom Z","Warehouse"],["John S","Warehouse"]];
   // Holiday closure weeks are loaded live from the backend (Holiday Weeks tab)
   // on page load, so adding future years to the sheet updates the form with no
   // change here. Starts empty and fills in once the fetch returns. Until it
