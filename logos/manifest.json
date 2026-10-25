@@ -114,6 +114,21 @@
    "variant": "franchise banner logo (franchisees are separate owners, per Brian), 905x301, dark text",
    "approvedBy": "Brian 2026-10-23 (franchise logo)",
    "shown": "on a white plate"
+  },
+  {
+   "file": "mandalay.webp",
+   "key": "mandalay",
+   "codes": [
+    "6284GTDEL",
+    "MANDALAY6464",
+    "6523",
+    "6442",
+    "6045"
+   ],
+   "source": "the Mandalay Sushi mark made for these accounts (StoreLogos.gs STORE_LOGOS_DRIVER 'giant'), 460x138 transparent, unchanged",
+   "variant": "Mandalay Sushi counters inside Giant; they have no corporate logo",
+   "approvedBy": "Brian 2026-10-25 (\"use the logo we created JUST for the Mandalay accounts\")",
+   "shown": "bare on the dark header"
   }
  ]
 }
