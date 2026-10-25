@@ -1,6 +1,6 @@
 {
  "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Files in plate/ are drawn on a white plate; the rest sit bare on the dark header. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/.",
- "rules": "Original files only. Resize only, no crop/recolor/redraw.",
+ "rules": "Original files only. Resize only, no crop/recolor/redraw. HARD RULE (Brian, 25 Oct): every logo file has a truly transparent background.",
  "files": [
   {
    "file": "airculinaire.svg",
@@ -78,7 +78,8 @@
    "source": "https://www.roytweedys.com/contact-us_files/3767772_231x177-1920w.png",
    "variant": "site logo 231x177 parchment",
    "approvedBy": "Brian 2026-10-23",
-   "shown": "bare on the dark header"
+   "shown": "bare on the dark header",
+   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
   },
   {
    "file": "plate/femis.webp",
@@ -89,7 +90,8 @@
    "source": "https://shop-logos.imgix.net/shops/56799/original/Femi's_Pizza.png",
    "variant": "Collingdale, own Slice upload, 278x225 white bg",
    "approvedBy": "Brian 2026-10-23",
-   "shown": "on a white plate"
+   "shown": "on a white plate",
+   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
   },
   {
    "file": "plate/femisparty.webp",
@@ -100,7 +102,8 @@
    "source": "https://shop-logos.imgix.net/shops/109473/original/images_(1).png",
    "variant": "Brookhaven, own Slice upload, 224x225 white bg",
    "approvedBy": "Brian 2026-10-23",
-   "shown": "on a white plate"
+   "shown": "on a white plate",
+   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
   },
   {
    "file": "plate/colonialvillage.webp",
@@ -128,6 +131,54 @@
    "source": "the Mandalay Sushi mark made for these accounts (StoreLogos.gs STORE_LOGOS_DRIVER 'giant'), 460x138 transparent, unchanged",
    "variant": "Mandalay Sushi counters inside Giant; they have no corporate logo",
    "approvedBy": "Brian 2026-10-25 (\"use the logo we created JUST for the Mandalay accounts\")",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "femis.webp",
+   "key": "femis",
+   "codes": [
+    "FEMIS"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/56799/original/Femi's_Pizza.png",
+   "variant": "Collingdale, own Slice upload, 278x225 white bg",
+   "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
+   "shown": "bare on the dark header",
+   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched."
+  },
+  {
+   "file": "femisparty.webp",
+   "key": "femisparty",
+   "codes": [
+    "FEMISPARTY"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/109473/original/images_(1).png",
+   "variant": "Brookhaven, own Slice upload, 224x225 white bg",
+   "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
+   "shown": "bare on the dark header",
+   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched."
+  },
+  {
+   "file": "plate/roytweedys.webp",
+   "key": "roytweedys",
+   "codes": [
+    "TWEED"
+   ],
+   "source": "https://www.roytweedys.com/contact-us_files/3767772_231x177-1920w.png",
+   "variant": "site logo 231x177 parchment",
+   "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
+   "shown": "on a white plate",
+   "transform": "25 Oct: parchment background made transparent (light pixels clear, ink kept, alpha ramped by darkness). Drawing and lettering untouched."
+  },
+  {
+   "file": "villanova.webp",
+   "key": "villanova",
+   "codes": [
+    "VILLANOVA"
+   ],
+   "source": "StoreLogos.gs STORE_LOGOS 'villanova' (customer side, in use since the pilot)",
+   "variant": "white reversed lockup",
+   "transform": "25 Oct: faint near-invisible haze (alpha 1-20, 69% of the frame) cleared to fully transparent. Logo pixels untouched.",
+   "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
    "shown": "bare on the dark header"
   }
  ]
