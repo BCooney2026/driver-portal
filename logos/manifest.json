@@ -1,6 +1,6 @@
 {
- "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Files in plate/ are drawn on a white plate; the rest sit bare on the dark header. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/.",
- "rules": "Original files only. Resize only, no crop/recolor/redraw. HARD RULE (Brian, 25 Oct): every logo file has a truly transparent background.",
+ "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Every logo sits bare on the dark header (25 Oct: no plates). Files in plate/ are retired, kept for history. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/.",
+ "rules": "Original files only. Resize only, no crop/recolor/redraw. HARD RULE (Brian, 25 Oct): every logo file has a truly transparent background. Colors may be changed so a logo reads on the dark header; the logo and brand never are (Brian, 25 Oct).",
  "files": [
   {
    "file": "airculinaire.svg",
@@ -70,18 +70,6 @@
    "shown": "bare on the dark header"
   },
   {
-   "file": "roytweedys.webp",
-   "key": "roytweedys",
-   "codes": [
-    "TWEED"
-   ],
-   "source": "https://www.roytweedys.com/contact-us_files/3767772_231x177-1920w.png",
-   "variant": "site logo 231x177 parchment",
-   "approvedBy": "Brian 2026-10-23",
-   "shown": "bare on the dark header",
-   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
-  },
-  {
    "file": "plate/femis.webp",
    "key": "femis",
    "codes": [
@@ -91,7 +79,7 @@
    "variant": "Collingdale, own Slice upload, 278x225 white bg",
    "approvedBy": "Brian 2026-10-23",
    "shown": "on a white plate",
-   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
+   "retired": "25 Oct: no plates (Brian: no white box). Replaced by the file of the same name outside plate/. Kept for history."
   },
   {
    "file": "plate/femisparty.webp",
@@ -103,7 +91,7 @@
    "variant": "Brookhaven, own Slice upload, 224x225 white bg",
    "approvedBy": "Brian 2026-10-23",
    "shown": "on a white plate",
-   "retired": "25 Oct: not fully transparent; replaced (see the file without the old path). Kept for history."
+   "retired": "25 Oct: no plates (Brian: no white box). Replaced by the file of the same name outside plate/. Kept for history."
   },
   {
    "file": "plate/colonialvillage.webp",
@@ -116,7 +104,8 @@
    "source": "https://le-cdn.hibuwebsites.com/3088510efa2d4c2f9fce4f44b91c2407/dms3rep/multi/opt/home-logo-colonial-vector-file-1920w.png",
    "variant": "franchise banner logo (franchisees are separate owners, per Brian), 905x301, dark text",
    "approvedBy": "Brian 2026-10-23 (franchise logo)",
-   "shown": "on a white plate"
+   "shown": "on a white plate",
+   "retired": "25 Oct: no plates (Brian: no white box). Replaced by the file of the same name outside plate/. Kept for history."
   },
   {
    "file": "mandalay.webp",
@@ -131,7 +120,8 @@
    "source": "the Mandalay Sushi mark made for these accounts (StoreLogos.gs STORE_LOGOS_DRIVER 'giant'), 460x138 transparent, unchanged",
    "variant": "Mandalay Sushi counters inside Giant; they have no corporate logo",
    "approvedBy": "Brian 2026-10-25 (\"use the logo we created JUST for the Mandalay accounts\")",
-   "shown": "bare on the dark header"
+   "shown": "bare on the dark header",
+   "trim": "transparent margin trimmed to the artwork (nothing else changed)"
   },
   {
    "file": "femis.webp",
@@ -143,7 +133,8 @@
    "variant": "Collingdale, own Slice upload, 278x225 white bg",
    "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
    "shown": "bare on the dark header",
-   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched."
+   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched.",
+   "trim": "transparent margin trimmed to the artwork (nothing else changed)"
   },
   {
    "file": "femisparty.webp",
@@ -155,7 +146,8 @@
    "variant": "Brookhaven, own Slice upload, 224x225 white bg",
    "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
    "shown": "bare on the dark header",
-   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched."
+   "transform": "25 Oct: the white square around the round badge removed (border-connected white only, 1px edge softened). Badge untouched.",
+   "trim": "transparent margin trimmed to the artwork (nothing else changed)"
   },
   {
    "file": "plate/roytweedys.webp",
@@ -167,7 +159,8 @@
    "variant": "site logo 231x177 parchment",
    "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
    "shown": "on a white plate",
-   "transform": "25 Oct: parchment background made transparent (light pixels clear, ink kept, alpha ramped by darkness). Drawing and lettering untouched."
+   "transform": "25 Oct: parchment background made transparent (light pixels clear, ink kept, alpha ramped by darkness). Drawing and lettering untouched.",
+   "retired": "25 Oct: no plates (Brian: no white box). Replaced by the file of the same name outside plate/. Kept for history."
   },
   {
    "file": "villanova.webp",
@@ -179,7 +172,57 @@
    "variant": "white reversed lockup",
    "transform": "25 Oct: faint near-invisible haze (alpha 1-20, 69% of the frame) cleared to fully transparent. Logo pixels untouched.",
    "approvedBy": "Brian 2026-10-25 (rule: ALL logos transparent)",
-   "shown": "bare on the dark header"
+   "shown": "bare on the dark header",
+   "trim": "transparent margin trimmed to the artwork (nothing else changed)"
+  },
+  {
+   "file": "colonialvillage.webp",
+   "key": "colonialvillage",
+   "codes": [
+    "CVFOL",
+    "CVNEW",
+    "CVSPR"
+   ],
+   "source": "https://le-cdn.hibuwebsites.com/3088510efa2d4c2f9fce4f44b91c2407/dms3rep/multi/opt/home-logo-colonial-vector-file-1920w.png",
+   "variant": "franchise banner logo (franchisees are separate owners, per Brian), 905x301, dark text",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'",
+   "shown": "bare on the dark header",
+   "transform": "25 Oct: dark gray 'Meat Market' lettering made white so it reads on the dark header without a plate. Drawing, red name and layout untouched."
+  },
+  {
+   "key": "waynesborough",
+   "file": "waynesborough.webp",
+   "transform": "25 Oct: StoreLogos.gs 'waynesborough' mark; dark green lettering and outlines made white so it reads without a plate. Gold leaf untouched.",
+   "shown": "bare on the dark header",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
+  },
+  {
+   "key": "teva",
+   "file": "teva.webp",
+   "transform": "25 Oct: StoreLogos.gs 'teva' mark; navy wordmark made white (as on Teva's own dark backgrounds). Leaf colors untouched.",
+   "shown": "bare on the dark header",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
+  },
+  {
+   "key": "applebrook",
+   "file": "applebrook.webp",
+   "transform": "25 Oct: StoreLogos.gs 'applebrook' mark; dark maroon lettering made cream. Fox untouched.",
+   "shown": "bare on the dark header",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
+  },
+  {
+   "key": "roytweedys",
+   "file": "roytweedys.webp",
+   "transform": "25 Oct: parchment background (incl. its top rule and curled bottom shadow) made transparent; brown ink made cream so it reads on the dark header. Drawing and lettering untouched.",
+   "shown": "bare on the dark header",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
+  },
+  {
+   "key": "corropolese",
+   "file": "corropolese.webp",
+   "transform": "25 Oct: StoreLogos.gs 'corropolese' mark; dark maroon name brightened to the same red, dark olive line lightened. Chef and layout untouched. (Overrides the 2026-08-05 'bare as is' call: Brian 25 Oct, 'use whatever looks best and cleanest for the customer'.)",
+   "shown": "bare on the dark header",
+   "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
   }
  ]
 }
