@@ -1,0 +1,119 @@
+{
+ "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Files in plate/ are drawn on a white plate; the rest sit bare on the dark header. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/.",
+ "rules": "Original files only. Resize only, no crop/recolor/redraw.",
+ "files": [
+  {
+   "file": "airculinaire.svg",
+   "key": "airculinaire",
+   "codes": [
+    "AIRCPHIL"
+   ],
+   "source": "https://airculinaireworldwide.com/wp-content/themes/acw/dist/images/acw-logo-alt.svg",
+   "variant": "their white-text version for dark backgrounds, full lockup incl. tagline",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "amerihealth.webp",
+   "key": "amerihealth",
+   "codes": [
+    "AmeriHealth"
+   ],
+   "source": "https://www.amerihealthcaritas.com/content/experience-fragments/corporate/corporate/language-masters/en/footer/master/_jcr_content/root/footer/image.coreimg.png/1746478534027/amerihealth-white-logo.png",
+   "variant": "their official white footer logo, 1280x94",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "difabios.webp",
+   "key": "difabios",
+   "codes": [
+    "DIFABIOS"
+   ],
+   "source": "https://irp.cdn-website.com/235c9d82/dms3rep/multi/opt/Logo-white-1920w.png",
+   "variant": "their white footer logo, 269x60",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "rschadford.webp",
+   "key": "rschadford",
+   "codes": [
+    "RSCHADFORD"
+   ],
+   "source": "https://www.lcbseniorliving.com/wp-content/uploads/2020/02/Chadds_full-color.png",
+   "variant": "their only community logo 612x180",
+   "approvedBy": "Brian 2026-10-23",
+   "transform": "EXCEPTION by Brian 2026-10-23: dark gray lettering to white (pixels with saturation<0.25 and max channel<170 -> 255, alpha kept); leaf untouched",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "meathouse.webp",
+   "key": "meathouse",
+   "codes": [
+    "MEAT"
+   ],
+   "source": "https://www.themeathousemarket.com/cdn/shop/files/MeatHouseMarket_Logo.png?v=1634746300",
+   "variant": "site header logo full size 1600x1298 transparent",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "carmiras.webp",
+   "key": "carmiras",
+   "codes": [
+    "CARMI"
+   ],
+   "source": "https://carmirasdeli.com/images/sealsticker.png",
+   "variant": "their seal logo, 3301x2374 transparent",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "roytweedys.webp",
+   "key": "roytweedys",
+   "codes": [
+    "TWEED"
+   ],
+   "source": "https://www.roytweedys.com/contact-us_files/3767772_231x177-1920w.png",
+   "variant": "site logo 231x177 parchment",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "plate/femis.webp",
+   "key": "femis",
+   "codes": [
+    "FEMIS"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/56799/original/Femi's_Pizza.png",
+   "variant": "Collingdale, own Slice upload, 278x225 white bg",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "on a white plate"
+  },
+  {
+   "file": "plate/femisparty.webp",
+   "key": "femisparty",
+   "codes": [
+    "FEMISPARTY"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/109473/original/images_(1).png",
+   "variant": "Brookhaven, own Slice upload, 224x225 white bg",
+   "approvedBy": "Brian 2026-10-23",
+   "shown": "on a white plate"
+  },
+  {
+   "file": "plate/colonialvillage.webp",
+   "key": "colonialvillage",
+   "codes": [
+    "CVFOL",
+    "CVNEW",
+    "CVSPR"
+   ],
+   "source": "https://le-cdn.hibuwebsites.com/3088510efa2d4c2f9fce4f44b91c2407/dms3rep/multi/opt/home-logo-colonial-vector-file-1920w.png",
+   "variant": "franchise banner logo (franchisees are separate owners, per Brian), 905x301, dark text",
+   "approvedBy": "Brian 2026-10-23 (franchise logo)",
+   "shown": "on a white plate"
+  }
+ ]
+}
