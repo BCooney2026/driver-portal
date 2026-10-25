@@ -1,5 +1,5 @@
 {
- "about": "Painted DRIVER-side store banners for the Customer Order App (driver stop list only, never the customer screen). 600x180 WebP, resized from the 1200x360 originals in iCloud CP App/Main Icons/Customer Logos/ChatGPTs. Artwork not altered; the 3 originals at 2172x724 were fitted without stretching and centered on transparent. 25 Oct: 17 more from Downloads/CP Driver Banners (Mike R #03 set; AmeriHealth, Car-Mira's and Meat House replaced with their approved 1200x360 versions).",
+ "about": "Painted DRIVER-side store banners for the Customer Order App (driver stop list only, never the customer screen). 600x180 WebP, resized from the 1200x360 originals in iCloud CP App/Main Icons/Customer Logos/ChatGPTs. Artwork not altered; the 3 originals at 2172x724 were fitted without stretching and centered on transparent. 25 Oct: 17 more from Downloads/CP Driver Banners (Mike R #03 set; AmeriHealth, Car-Mira's and Meat House replaced with their approved 1200x360 versions). 25 Oct PM: 10 more from ChatGPTs (Old Nelson 7th & Chestnut, Mandalay Sushi x5, Heirloom Market Bainbridge and 2nd Street, Sprouts Limerick, Steaks West Chester) fitted from 2172x724 without stretching; Talks Tavern Douglassville replaced with cap's 25 Oct redo.",
  "files": [
   {
    "file": "4-seasons-rittenhouse.webp",
@@ -618,6 +618,28 @@
    "padded": false
   },
   {
+   "file": "heirloom-market-2nd-street.webp",
+   "name": "Heirloom Market 2nd Street",
+   "source": "Heirloom Market 2nd Street.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 53572,
+   "padded": true
+  },
+  {
+   "file": "heirloom-market-bainbridge.webp",
+   "name": "Heirloom Market Bainbridge",
+   "source": "Heirloom Market Bainbridge.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 59342,
+   "padded": true
+  },
+  {
    "file": "hilton-garden-inn-exton.webp",
    "name": "Hilton Garden Inn Exton",
    "source": "Hilton Garden Inn Exton.png",
@@ -816,6 +838,61 @@
    "padded": false
   },
   {
+   "file": "mandalay-sushi-broomall.webp",
+   "name": "Mandalay Sushi Broomall",
+   "source": "Mandalay Sushi Broomall.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 51068,
+   "padded": true
+  },
+  {
+   "file": "mandalay-sushi-havertown.webp",
+   "name": "Mandalay Sushi Havertown",
+   "source": "Mandalay Sushi Havertown.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 51864,
+   "padded": true
+  },
+  {
+   "file": "mandalay-sushi-royersford.webp",
+   "name": "Mandalay Sushi Royersford",
+   "source": "Mandalay Sushi Royersford.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 54196,
+   "padded": true
+  },
+  {
+   "file": "mandalay-sushi-springfield.webp",
+   "name": "Mandalay Sushi Springfield",
+   "source": "Mandalay Sushi Springfield.png",
+   "srcSize": [
+    2171,
+    724
+   ],
+   "bytes": 50426,
+   "padded": true
+  },
+  {
+   "file": "mandalay-sushi-west-grove.webp",
+   "name": "Mandalay Sushi West Grove",
+   "source": "Mandalay Sushi West Grove.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 50854,
+   "padded": true
+  },
+  {
    "file": "meat-house-market-chadds-ford.webp",
    "name": "Meat House Market Chadds Ford",
    "source": "Downloads/CP Driver Banners/Meat House Market Chadds Ford.png",
@@ -946,6 +1023,17 @@
    ],
    "bytes": 59846,
    "padded": false
+  },
+  {
+   "file": "old-nelson-7th-and-chestnut.webp",
+   "name": "Old Nelson 7th & Chestnut",
+   "source": "Old Nelson 7th & Chestnut.png",
+   "srcSize": [
+    2164,
+    727
+   ],
+   "bytes": 51780,
+   "padded": true
   },
   {
    "file": "old-nelson-arch-street.webp",
@@ -1443,6 +1531,17 @@
    "padded": false
   },
   {
+   "file": "sprouts-limerick.webp",
+   "name": "Sprouts Limerick",
+   "source": "Sprouts Limerick.png",
+   "srcSize": [
+    2171,
+    724
+   ],
+   "bytes": 44900,
+   "padded": true
+  },
+  {
    "file": "steak-em-up-south-philly.webp",
    "name": "Steak Em Up South Philly",
    "source": "Steak Em Up South Philly.png",
@@ -1463,6 +1562,17 @@
    ],
    "bytes": 62110,
    "padded": false
+  },
+  {
+   "file": "steaks-west-chester.webp",
+   "name": "Steaks West Chester",
+   "source": "Steaks West Chester.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 60252,
+   "padded": true
   },
   {
    "file": "steel-city-coffeehouse-phoenixville.webp",
@@ -1524,11 +1634,11 @@
    "name": "Talks Tavern Douglassville",
    "source": "Talks Tavern Douglassville.png",
    "srcSize": [
-    1200,
-    360
+    2164,
+    727
    ],
-   "bytes": 53536,
-   "padded": false
+   "bytes": 51908,
+   "padded": true
   },
   {
    "file": "tallutos-eagleville.webp",
