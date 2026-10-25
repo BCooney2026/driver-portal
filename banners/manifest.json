@@ -640,6 +640,17 @@
    "padded": true
   },
   {
+   "file": "heirloom-market-chestnut-street.webp",
+   "name": "Heirloom Market Chestnut Street",
+   "source": "HeirloomChestnut.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 57702,
+   "padded": true
+  },
+  {
    "file": "hilton-garden-inn-exton.webp",
    "name": "Hilton Garden Inn Exton",
    "source": "Hilton Garden Inn Exton.png",
