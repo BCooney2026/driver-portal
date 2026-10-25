@@ -1,0 +1,1634 @@
+{
+ "about": "Painted DRIVER-side store banners for the Customer Order App (driver stop list only, never the customer screen). 600x180 WebP, resized from the 1200x360 originals in iCloud CP App/Main Icons/Customer Logos/ChatGPTs. Artwork not altered; the 3 originals at 2172x724 were fitted without stretching and centered on transparent.",
+ "files": [
+  {
+   "file": "4-seasons-rittenhouse.webp",
+   "name": "4 Seasons Rittenhouse",
+   "source": "4 Seasons Rittenhouse.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62460,
+   "padded": false
+  },
+  {
+   "file": "555-gourmet-deli-bala-cynwyd.webp",
+   "name": "555 Gourmet Deli Bala Cynwyd",
+   "source": "555 Gourmet Deli Bala Cynwyd.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65820,
+   "padded": false
+  },
+  {
+   "file": "aneu-paoli.webp",
+   "name": "ANEU Paoli",
+   "source": "ANEU Paoli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55472,
+   "padded": false
+  },
+  {
+   "file": "abramson-research-center.webp",
+   "name": "Abramson Research Center",
+   "source": "Abramson Research Center.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62940,
+   "padded": false
+  },
+  {
+   "file": "alice-bakery-north-wales.webp",
+   "name": "Alice Bakery North Wales",
+   "source": "Alice Bakery North Wales.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 68714,
+   "padded": false
+  },
+  {
+   "file": "all-day-hoagies-brewerytown.webp",
+   "name": "All Day Hoagies Brewerytown",
+   "source": "All Day Hoagies Brewerytown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54818,
+   "padded": false
+  },
+  {
+   "file": "amici-lansdale.webp",
+   "name": "Amici Lansdale",
+   "source": "Amici Lansdale.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65796,
+   "padded": false
+  },
+  {
+   "file": "antonellas-bryn-mawr.webp",
+   "name": "Antonellas Bryn Mawr",
+   "source": "Antonellas Bryn Mawr.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60664,
+   "padded": false
+  },
+  {
+   "file": "ants-pants-cafe-south-street.webp",
+   "name": "Ants Pants Cafe South Street",
+   "source": "Ants Pants Cafe South Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57330,
+   "padded": false
+  },
+  {
+   "file": "apollo-deli-queen-village.webp",
+   "name": "Apollo Deli Queen Village",
+   "source": "Apollo Deli Queen Village.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61226,
+   "padded": false
+  },
+  {
+   "file": "applebrook-malvern.webp",
+   "name": "Applebrook Malvern",
+   "source": "Applebrook Malvern.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56048,
+   "padded": false
+  },
+  {
+   "file": "barristers-bagels-pottstown.webp",
+   "name": "Barristers Bagels Pottstown",
+   "source": "Barristers Bagels Pottstown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59052,
+   "padded": false
+  },
+  {
+   "file": "barristers-bagels-royersford.webp",
+   "name": "Barristers Bagels Royersford",
+   "source": "Barristers Bagels Royersford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53424,
+   "padded": false
+  },
+  {
+   "file": "berwyn-tavern.webp",
+   "name": "Berwyn Tavern",
+   "source": "Berwyn Tavern.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67678,
+   "padded": false
+  },
+  {
+   "file": "borromini-rittenhouse.webp",
+   "name": "Borromini Rittenhouse",
+   "source": "Borromini Rittenhouse.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60636,
+   "padded": false
+  },
+  {
+   "file": "brunos-lafayette-hill.webp",
+   "name": "Brunos Lafayette Hill",
+   "source": "Brunos Lafayette Hill.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 50998,
+   "padded": false
+  },
+  {
+   "file": "cafe-click-center-city.webp",
+   "name": "Cafe Click Center City",
+   "source": "Cafe Click Center City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 68756,
+   "padded": false
+  },
+  {
+   "file": "carlinos-ardmore.webp",
+   "name": "Carlinos Ardmore",
+   "source": "Carlinos Ardmore.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54398,
+   "padded": false
+  },
+  {
+   "file": "cencora-conshohocken.webp",
+   "name": "Cencora Conshohocken",
+   "source": "Cencora Conshohocken.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54480,
+   "padded": false
+  },
+  {
+   "file": "christies-deli-philadelphia.webp",
+   "name": "Christies Deli Philadelphia",
+   "source": "Christies Deli Philadelphia.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 64516,
+   "padded": false
+  },
+  {
+   "file": "chubb-old-city.webp",
+   "name": "Chubb Old City",
+   "source": "Chubb Old City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60312,
+   "padded": false
+  },
+  {
+   "file": "collegeville-italian-bakery.webp",
+   "name": "Collegeville Italian Bakery",
+   "source": "Collegeville Italian Bakery.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57680,
+   "padded": false
+  },
+  {
+   "file": "colonial-village-meat-market-havertown.webp",
+   "name": "Colonial Village Meat Market Havertown",
+   "source": "Colonial Village Meat Market Havertown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67734,
+   "padded": false
+  },
+  {
+   "file": "meat-house-market-chadds-ford.webp",
+   "name": "Meat House Market Chadds Ford",
+   "source": "Colonial Village Meat Market Springfield.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 54900,
+   "padded": true,
+   "note": "Source file on the Mac was mislabeled Colonial Village Meat Market Springfield; artwork reads MEAT HOUSE MARKET / CHADDS FORD"
+  },
+  {
+   "file": "colonial-village-meat-market-west-chester.webp",
+   "name": "Colonial Village Meat Market West Chester",
+   "source": "Colonial Village Meat Market West Chester.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66814,
+   "padded": false
+  },
+  {
+   "file": "comcast-boot-road.webp",
+   "name": "Comcast Boot Road",
+   "source": "Comcast Boot Road.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58000,
+   "padded": false
+  },
+  {
+   "file": "continental-midtown.webp",
+   "name": "Continental Midtown",
+   "source": "Continental Midtown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 42690,
+   "padded": false
+  },
+  {
+   "file": "corropolese-limerick.webp",
+   "name": "Corropolese Limerick",
+   "source": "Corropolese Limerick.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60192,
+   "padded": false
+  },
+  {
+   "file": "country-butcher-kennett-square.webp",
+   "name": "Country Butcher Kennett Square",
+   "source": "Country Butcher Kennett Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61234,
+   "padded": false
+  },
+  {
+   "file": "don-pedro-philadelphia.webp",
+   "name": "Don Pedro Philadelphia",
+   "source": "Don Pedro Philadelphia.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 49154,
+   "padded": false
+  },
+  {
+   "file": "everything-bagel-north-wales.webp",
+   "name": "Everything Bagel North Wales",
+   "source": "Everything Bagel North Wales.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67728,
+   "padded": false
+  },
+  {
+   "file": "ferrantes-meats-and-more.webp",
+   "name": "Ferrantes Meats & More",
+   "source": "Ferrantes Meats & More.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67150,
+   "padded": false
+  },
+  {
+   "file": "fieldstone-chester-springs.webp",
+   "name": "Fieldstone Chester Springs",
+   "source": "Fieldstone Chester Springs.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54198,
+   "padded": false
+  },
+  {
+   "file": "forestas-phoenixville.webp",
+   "name": "Forestas Phoenixville",
+   "source": "Forestas Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65584,
+   "padded": false
+  },
+  {
+   "file": "freeds-supermarket-gilbertsville.webp",
+   "name": "Freeds Supermarket Gilbertsville",
+   "source": "Freeds Supermarket Gilbertsville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63324,
+   "padded": false
+  },
+  {
+   "file": "fresh-ideas-paoli.webp",
+   "name": "Fresh Ideas Paoli",
+   "source": "Fresh Ideas Paoli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 68442,
+   "padded": false
+  },
+  {
+   "file": "george-school-newtown.webp",
+   "name": "George School Newtown",
+   "source": "George School Newtown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60440,
+   "padded": false
+  },
+  {
+   "file": "georges-dreshertown.webp",
+   "name": "Georges Dreshertown",
+   "source": "Georges Dreshertown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58150,
+   "padded": false
+  },
+  {
+   "file": "germantown-friends-school.webp",
+   "name": "Germantown Friends School",
+   "source": "Germantown Friends School.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 69248,
+   "padded": false
+  },
+  {
+   "file": "giovannis-italian-express-pottstown.webp",
+   "name": "Giovannis Italian Express Pottstown",
+   "source": "Giovannis Italian Express Pottstown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66320,
+   "padded": false
+  },
+  {
+   "file": "giovannis-pottstown.webp",
+   "name": "Giovannis Pottstown",
+   "source": "Giovannis Pottstown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57064,
+   "padded": false
+  },
+  {
+   "file": "gourmet-sanga-center-city.webp",
+   "name": "Gourmet Sanga Center City",
+   "source": "Gourmet Sanga Center City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63420,
+   "padded": false
+  },
+  {
+   "file": "great-american-pub-wayne.webp",
+   "name": "Great American Pub Wayne",
+   "source": "Great American Pub Wayne.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67502,
+   "padded": false
+  },
+  {
+   "file": "green-thumb-collingdale.webp",
+   "name": "Green Thumb Collingdale",
+   "source": "Green Thumb Collingdale.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62596,
+   "padded": false
+  },
+  {
+   "file": "guavaberry-fabric-row.webp",
+   "name": "Guavaberry Fabric Row",
+   "source": "Guavaberry Fabric Row.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 50436,
+   "padded": false
+  },
+  {
+   "file": "hamilton-lane-conshohocken.webp",
+   "name": "Hamilton Lane Conshohocken",
+   "source": "Hamilton Lane Conshohocken.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61118,
+   "padded": false
+  },
+  {
+   "file": "hilton-garden-inn-exton.webp",
+   "name": "Hilton Garden Inn Exton",
+   "source": "Hilton Garden Inn Exton.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56908,
+   "padded": false
+  },
+  {
+   "file": "holy-redeemer-meadowbrook.webp",
+   "name": "Holy Redeemer Meadowbrook",
+   "source": "Holy Redeemer Meadowbrook.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65304,
+   "padded": false
+  },
+  {
+   "file": "honey-bee-spruce-street.webp",
+   "name": "Honey Bee Spruce Street",
+   "source": "Honey Bee Spruce Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54766,
+   "padded": false
+  },
+  {
+   "file": "honey-bee-washington-square.webp",
+   "name": "Honey Bee Washington Square",
+   "source": "Honey Bee Washington Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66674,
+   "padded": false
+  },
+  {
+   "file": "independence-blue-cross-center-city.webp",
+   "name": "Independence Blue Cross Center City",
+   "source": "Independence Blue Cross Center City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67658,
+   "padded": false
+  },
+  {
+   "file": "ithan-market-villanova.webp",
+   "name": "Ithan Market Villanova",
+   "source": "Ithan Market Villanova.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66868,
+   "padded": false
+  },
+  {
+   "file": "jays-deli-13th-and-spruce.webp",
+   "name": "Jays Deli 13th & Spruce",
+   "source": "Jays Deli 13th & Spruce.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 51638,
+   "padded": false
+  },
+  {
+   "file": "jeannies-deli-ardmore.webp",
+   "name": "Jeannies Deli Ardmore",
+   "source": "Jeannies Deli Ardmore.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61832,
+   "padded": false
+  },
+  {
+   "file": "kimberton-collegeville.webp",
+   "name": "Kimberton Collegeville",
+   "source": "Kimberton Collegeville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55054,
+   "padded": false
+  },
+  {
+   "file": "kimberton-whole-foods-kimberton.webp",
+   "name": "Kimberton Whole Foods Kimberton",
+   "source": "Kimberton Whole Foods Kimberton.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65074,
+   "padded": false
+  },
+  {
+   "file": "la-sicilia-oxford.webp",
+   "name": "La Sicilia Oxford",
+   "source": "La Sicilia Oxford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55626,
+   "padded": false
+  },
+  {
+   "file": "landhope-farms-kennett-square.webp",
+   "name": "Landhope Farms Kennett Square",
+   "source": "Landhope Farms Kennett Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 50440,
+   "padded": false
+  },
+  {
+   "file": "landhope-farms-oxford.webp",
+   "name": "Landhope Farms Oxford",
+   "source": "Landhope Farms Oxford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 51274,
+   "padded": false
+  },
+  {
+   "file": "liones-downingtown.webp",
+   "name": "Liones Downingtown",
+   "source": "Liones Downingtown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57084,
+   "padded": false
+  },
+  {
+   "file": "llanerch-country-club.webp",
+   "name": "Llanerch Country Club",
+   "source": "Llanerch Country Club.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58948,
+   "padded": false
+  },
+  {
+   "file": "lucky-7-deli-willow-grove.webp",
+   "name": "Lucky 7 Deli Willow Grove",
+   "source": "Lucky 7 Deli Willow Grove.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61046,
+   "padded": false
+  },
+  {
+   "file": "ludwigs-glenmoore.webp",
+   "name": "Ludwigs Glenmoore",
+   "source": "Ludwigs Glenmoore.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56766,
+   "padded": false
+  },
+  {
+   "file": "manayunk-pizza.webp",
+   "name": "Manayunk Pizza",
+   "source": "Manayunk Pizza.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66994,
+   "padded": false
+  },
+  {
+   "file": "merion-cricket-club-haverford.webp",
+   "name": "Merion Cricket Club Haverford",
+   "source": "Merion Cricket Club Haverford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61190,
+   "padded": false
+  },
+  {
+   "file": "merion-golf-club.webp",
+   "name": "Merion Golf Club",
+   "source": "Merion Golf Club.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58536,
+   "padded": false
+  },
+  {
+   "file": "met-fresh-south-philly.webp",
+   "name": "Met Fresh South Philly",
+   "source": "Met Fresh South Philly.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61840,
+   "padded": false
+  },
+  {
+   "file": "mi-pals-deli-south-philly.webp",
+   "name": "Mi-Pals Deli South Philly",
+   "source": "Mi-Pals Deli South Philly.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 69684,
+   "padded": false
+  },
+  {
+   "file": "monde-market-rittenhouse.webp",
+   "name": "Monde Market Rittenhouse",
+   "source": "Monde Market Rittenhouse.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65872,
+   "padded": false
+  },
+  {
+   "file": "morgan-lewis-center-city.webp",
+   "name": "Morgan Lewis Center City",
+   "source": "Morgan Lewis Center City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67704,
+   "padded": false
+  },
+  {
+   "file": "mulberry-market-old-city.webp",
+   "name": "Mulberry Market Old City",
+   "source": "Mulberry Market Old City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65736,
+   "padded": false
+  },
+  {
+   "file": "munchies-coatesville.webp",
+   "name": "Munchies Coatesville",
+   "source": "Munchies Coatesville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58202,
+   "padded": false
+  },
+  {
+   "file": "oneills-glenside.webp",
+   "name": "ONeills Glenside",
+   "source": "ONeills Glenside.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57204,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-13th-street.webp",
+   "name": "Old Nelson 13th Street",
+   "source": "Old Nelson 13th Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63460,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-3020-market.webp",
+   "name": "Old Nelson 3020 Market",
+   "source": "Old Nelson 3020 Market.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55814,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-3600-market.webp",
+   "name": "Old Nelson 3600 Market",
+   "source": "Old Nelson 3600 Market.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59846,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-arch-street.webp",
+   "name": "Old Nelson Arch Street",
+   "source": "Old Nelson Arch Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58686,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-jfk-blvd.webp",
+   "name": "Old Nelson JFK Blvd",
+   "source": "Old Nelson JFK Blvd.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62130,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-lancaster-ave.webp",
+   "name": "Old Nelson Lancaster Ave",
+   "source": "Old Nelson Lancaster Ave.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55834,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-parkway.webp",
+   "name": "Old Nelson Parkway",
+   "source": "Old Nelson Parkway.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57712,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-rittenhouse.webp",
+   "name": "Old Nelson Rittenhouse",
+   "source": "Old Nelson Rittenhouse.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60472,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-spring-garden.webp",
+   "name": "Old Nelson Spring Garden",
+   "source": "Old Nelson Spring Garden.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65446,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-temple.webp",
+   "name": "Old Nelson Temple",
+   "source": "Old Nelson Temple.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61204,
+   "padded": false
+  },
+  {
+   "file": "old-nelson-university-city.webp",
+   "name": "Old Nelson University City",
+   "source": "Old Nelson University City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60594,
+   "padded": false
+  },
+  {
+   "file": "olivier-cafe-old-city.webp",
+   "name": "Olivier Cafe Old City",
+   "source": "Olivier Cafe Old City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63288,
+   "padded": false
+  },
+  {
+   "file": "on-a-roll-south-philly.webp",
+   "name": "On A Roll South Philly",
+   "source": "On A Roll South Philly.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61382,
+   "padded": false
+  },
+  {
+   "file": "our-deli-paoli.webp",
+   "name": "Our Deli Paoli",
+   "source": "Our Deli Paoli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 47716,
+   "padded": false
+  },
+  {
+   "file": "our-deli-phoenixville.webp",
+   "name": "Our Deli Phoenixville",
+   "source": "Our Deli Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 47400,
+   "padded": false
+  },
+  {
+   "file": "palm-tree-north-broad.webp",
+   "name": "Palm Tree North Broad",
+   "source": "Palm Tree North Broad.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55164,
+   "padded": false
+  },
+  {
+   "file": "palm-tree-northern-liberties.webp",
+   "name": "Palm Tree Northern Liberties",
+   "source": "Palm Tree Northern Liberties.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67538,
+   "padded": false
+  },
+  {
+   "file": "palm-tree-pine-street.webp",
+   "name": "Palm Tree Pine Street",
+   "source": "Palm Tree Pine Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58184,
+   "padded": false
+  },
+  {
+   "file": "palm-tree-queen-village.webp",
+   "name": "Palm Tree Queen Village",
+   "source": "Palm Tree Queen Village.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63556,
+   "padded": false
+  },
+  {
+   "file": "parkway-corner-deli-fairmount.webp",
+   "name": "Parkway Corner Deli Fairmount",
+   "source": "Parkway Corner Deli Fairmount.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56324,
+   "padded": false
+  },
+  {
+   "file": "penn-presbyterian-university-city.webp",
+   "name": "Penn Presbyterian University City",
+   "source": "Penn Presbyterian University City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57374,
+   "padded": false
+  },
+  {
+   "file": "pennsylvania-hospital.webp",
+   "name": "Pennsylvania Hospital",
+   "source": "Pennsylvania Hospital.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 67872,
+   "padded": false
+  },
+  {
+   "file": "philadelphia-cricket-club-flourtown.webp",
+   "name": "Philadelphia Cricket Club Flourtown",
+   "source": "Philadelphia Cricket Club Flourtown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62970,
+   "padded": false
+  },
+  {
+   "file": "philadelphia-cricket-club-st-martins.webp",
+   "name": "Philadelphia Cricket Club St Martins",
+   "source": "Philadelphia Cricket Club St Martins.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65212,
+   "padded": false
+  },
+  {
+   "file": "philadelphia-performing-arts-center-city.webp",
+   "name": "Philadelphia Performing Arts Center City",
+   "source": "Philadelphia Performing Arts Center City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 68292,
+   "padded": false
+  },
+  {
+   "file": "phoenixville-high-school.webp",
+   "name": "Phoenixville High School",
+   "source": "Phoenixville High School.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 49268,
+   "padded": false
+  },
+  {
+   "file": "rivercrest-golf-club.webp",
+   "name": "RiverCrest Golf Club",
+   "source": "RiverCrest Golf Club.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63288,
+   "padded": false
+  },
+  {
+   "file": "ro-lynn-deli-brookhaven.webp",
+   "name": "Ro-Lynn Deli Brookhaven",
+   "source": "Ro-Lynn Deli Brookhaven.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66130,
+   "padded": false
+  },
+  {
+   "file": "roccos-phoenixville.webp",
+   "name": "Roccos Phoenixville",
+   "source": "Roccos Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54870,
+   "padded": false
+  },
+  {
+   "file": "rolling-stars-west-chester.webp",
+   "name": "Rolling Stars West Chester",
+   "source": "Rolling Stars West Chester.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59012,
+   "padded": false
+  },
+  {
+   "file": "rollo-provisions-market-street.webp",
+   "name": "Rollo Provisions Market Street",
+   "source": "Rollo Provisions Market Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59600,
+   "padded": false
+  },
+  {
+   "file": "roy-tweedys-holmes.webp",
+   "name": "Roy Tweedys Holmes",
+   "source": "Roy Tweedys Holmes.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60074,
+   "padded": false
+  },
+  {
+   "file": "amerihealth-caritas.webp",
+   "name": "AmeriHealth Caritas",
+   "source": "S302_AmeriHealthCaritas.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 57682,
+   "padded": true
+  },
+  {
+   "file": "car-miras-deli.webp",
+   "name": "Car-Miras Deli",
+   "source": "S303_CarMiras.png",
+   "srcSize": [
+    2172,
+    724
+   ],
+   "bytes": 57610,
+   "padded": true
+  },
+  {
+   "file": "saint-charles-borromeo-seminary.webp",
+   "name": "Saint Charles Borromeo Seminary",
+   "source": "Saint Charles Borromeo Seminary.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58474,
+   "padded": false
+  },
+  {
+   "file": "sams-willow-grove.webp",
+   "name": "Sams Willow Grove",
+   "source": "Sams Willow Grove.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56846,
+   "padded": false
+  },
+  {
+   "file": "sandpiper-south-street.webp",
+   "name": "Sandpiper South Street",
+   "source": "Sandpiper South Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 64982,
+   "padded": false
+  },
+  {
+   "file": "sassafras-market-old-city.webp",
+   "name": "Sassafras Market Old City",
+   "source": "Sassafras Market Old City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55872,
+   "padded": false
+  },
+  {
+   "file": "slicers-deli-douglassville.webp",
+   "name": "Slicers Deli Douglassville",
+   "source": "Slicers Deli Douglassville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55806,
+   "padded": false
+  },
+  {
+   "file": "sopranos-broomall.webp",
+   "name": "Sopranos Broomall",
+   "source": "Sopranos Broomall.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60750,
+   "padded": false
+  },
+  {
+   "file": "south-deli-and-grocery.webp",
+   "name": "South Deli & Grocery",
+   "source": "South Deli & Grocery.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58806,
+   "padded": false
+  },
+  {
+   "file": "sovana-bistro-kennett-square.webp",
+   "name": "Sovana Bistro Kennett Square",
+   "source": "Sovana Bistro Kennett Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57904,
+   "padded": false
+  },
+  {
+   "file": "spring-ford-high-school.webp",
+   "name": "Spring-Ford High School",
+   "source": "Spring-Ford High School.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53962,
+   "padded": false
+  },
+  {
+   "file": "springside-chestnut-hill-academy.webp",
+   "name": "Springside Chestnut Hill Academy",
+   "source": "Springside Chestnut Hill Academy.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 64194,
+   "padded": false
+  },
+  {
+   "file": "steak-em-up-south-philly.webp",
+   "name": "Steak Em Up South Philly",
+   "source": "Steak Em Up South Philly.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63816,
+   "padded": false
+  },
+  {
+   "file": "steaks-phillys-gourmet.webp",
+   "name": "Steaks Phillys Gourmet",
+   "source": "Steaks Phillys Gourmet.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62110,
+   "padded": false
+  },
+  {
+   "file": "steel-city-coffeehouse-phoenixville.webp",
+   "name": "Steel City Coffeehouse Phoenixville",
+   "source": "Steel City Coffeehouse Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 51260,
+   "padded": false
+  },
+  {
+   "file": "stonewall-elverson.webp",
+   "name": "Stonewall Elverson",
+   "source": "Stonewall Elverson.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59992,
+   "padded": false
+  },
+  {
+   "file": "sues-produce-society-hill.webp",
+   "name": "Sues Produce Society Hill",
+   "source": "Sues Produce Society Hill.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56328,
+   "padded": false
+  },
+  {
+   "file": "sweet-brew-cafe-phoenixville.webp",
+   "name": "Sweet Brew Cafe Phoenixville",
+   "source": "Sweet Brew Cafe Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63946,
+   "padded": false
+  },
+  {
+   "file": "talks-tavern-douglassville.webp",
+   "name": "Talks Tavern Douglassville",
+   "source": "Talks Tavern Douglassville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53536,
+   "padded": false
+  },
+  {
+   "file": "tallutos-eagleville.webp",
+   "name": "Tallutos Eagleville",
+   "source": "Tallutos Eagleville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65706,
+   "padded": false
+  },
+  {
+   "file": "tallutos-ridley-park.webp",
+   "name": "Tallutos Ridley Park",
+   "source": "Tallutos Ridley Park.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66788,
+   "padded": false
+  },
+  {
+   "file": "teva-brandywine.webp",
+   "name": "Teva Brandywine",
+   "source": "Teva Brandywine.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54626,
+   "padded": false
+  },
+  {
+   "file": "the-foodery-northern-liberties.webp",
+   "name": "The Foodery Northern Liberties",
+   "source": "The Foodery Northern Liberties.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54492,
+   "padded": false
+  },
+  {
+   "file": "the-foodery-phoenixville.webp",
+   "name": "The Foodery Phoenixville",
+   "source": "The Foodery Phoenixville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53550,
+   "padded": false
+  },
+  {
+   "file": "the-hill-at-whitemarsh.webp",
+   "name": "The Hill at Whitemarsh",
+   "source": "The Hill at Whitemarsh.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56644,
+   "padded": false
+  },
+  {
+   "file": "the-market-lafayette-hill.webp",
+   "name": "The Market Lafayette Hill",
+   "source": "The Market Lafayette Hill.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 51694,
+   "padded": false
+  },
+  {
+   "file": "the-residence-bala-cynwyd.webp",
+   "name": "The Residence Bala Cynwyd",
+   "source": "The Residence Bala Cynwyd.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 51228,
+   "padded": false
+  },
+  {
+   "file": "torch-wood-market-old-city.webp",
+   "name": "Torch-Wood Market Old City",
+   "source": "Torch-Wood Market Old City.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63890,
+   "padded": false
+  },
+  {
+   "file": "toscos-brick-oven-pizza-pennsburg.webp",
+   "name": "Toscos Brick Oven Pizza Pennsburg",
+   "source": "Toscos Brick Oven Pizza Pennsburg.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55824,
+   "padded": false
+  },
+  {
+   "file": "toscos-italian-delight-red-hill.webp",
+   "name": "Toscos Italian Delight Red Hill",
+   "source": "Toscos Italian Delight Red Hill.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61372,
+   "padded": false
+  },
+  {
+   "file": "trappe-tavern.webp",
+   "name": "Trappe Tavern",
+   "source": "Trappe Tavern.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57238,
+   "padded": false
+  },
+  {
+   "file": "tredici-wayne.webp",
+   "name": "Tredici Wayne",
+   "source": "Tredici Wayne.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 64890,
+   "padded": false
+  },
+  {
+   "file": "urban-outfitters-navy-yard.webp",
+   "name": "Urban Outfitters Navy Yard",
+   "source": "Urban Outfitters Navy Yard.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62354,
+   "padded": false
+  },
+  {
+   "file": "vip-market-walnut-street.webp",
+   "name": "VIP Market Walnut Street",
+   "source": "VIP Market Walnut Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57434,
+   "padded": false
+  },
+  {
+   "file": "valley-house-malvern.webp",
+   "name": "Valley House Malvern",
+   "source": "Valley House Malvern.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 63668,
+   "padded": false
+  },
+  {
+   "file": "villanova-2nd-storey.webp",
+   "name": "Villanova 2nd Storey",
+   "source": "Villanova 2nd Storey.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61894,
+   "padded": false
+  },
+  {
+   "file": "waterfront-gourmet-chop.webp",
+   "name": "Waterfront Gourmet CHOP",
+   "source": "Waterfront Gourmet CHOP.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61394,
+   "padded": false
+  },
+  {
+   "file": "waynesborough-paoli.webp",
+   "name": "Waynesborough Paoli",
+   "source": "Waynesborough Paoli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59044,
+   "padded": false
+  },
+  {
+   "file": "whitemarsh-valley-country-club.webp",
+   "name": "Whitemarsh Valley Country Club",
+   "source": "Whitemarsh Valley Country Club.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60136,
+   "padded": false
+  },
+  {
+   "file": "zacharys-bbq-collegeville.webp",
+   "name": "Zacharys BBQ Collegeville",
+   "source": "Zacharys BBQ Collegeville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53286,
+   "padded": false
+  },
+  {
+   "file": "zesto-bryn-mawr.webp",
+   "name": "Zesto Bryn Mawr",
+   "source": "Zesto Bryn Mawr.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 52766,
+   "padded": false
+  },
+  {
+   "file": "rybread-fairmount.webp",
+   "name": "rybread Fairmount",
+   "source": "rybread Fairmount.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56420,
+   "padded": false
+  },
+  {
+   "file": "rybrew-brewerytown.webp",
+   "name": "rybrew Brewerytown",
+   "source": "rybrew Brewerytown.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 52614,
+   "padded": false
+  }
+ ]
+}
