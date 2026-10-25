@@ -1,5 +1,5 @@
 {
- "about": "Painted DRIVER-side store banners for the Customer Order App (driver stop list only, never the customer screen). 600x180 WebP, resized from the 1200x360 originals in iCloud CP App/Main Icons/Customer Logos/ChatGPTs. Artwork not altered; the 3 originals at 2172x724 were fitted without stretching and centered on transparent.",
+ "about": "Painted DRIVER-side store banners for the Customer Order App (driver stop list only, never the customer screen). 600x180 WebP, resized from the 1200x360 originals in iCloud CP App/Main Icons/Customer Logos/ChatGPTs. Artwork not altered; the 3 originals at 2172x724 were fitted without stretching and centered on transparent. 25 Oct: 17 more from Downloads/CP Driver Banners (Mike R #03 set; AmeriHealth, Car-Mira's and Meat House replaced with their approved 1200x360 versions).",
  "files": [
   {
    "file": "4-seasons-rittenhouse.webp",
@@ -24,17 +24,6 @@
    "padded": false
   },
   {
-   "file": "aneu-paoli.webp",
-   "name": "ANEU Paoli",
-   "source": "ANEU Paoli.png",
-   "srcSize": [
-    1200,
-    360
-   ],
-   "bytes": 55472,
-   "padded": false
-  },
-  {
    "file": "abramson-research-center.webp",
    "name": "Abramson Research Center",
    "source": "Abramson Research Center.png",
@@ -43,6 +32,17 @@
     360
    ],
    "bytes": 62940,
+   "padded": false
+  },
+  {
+   "file": "air-culinaire-philadelphia.webp",
+   "name": "Air Culinaire Philadelphia",
+   "source": "Downloads/CP Driver Banners/Air Culinaire Philadelphia.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66838,
    "padded": false
   },
   {
@@ -68,6 +68,17 @@
    "padded": false
   },
   {
+   "file": "amerihealth-caritas.webp",
+   "name": "AmeriHealth Caritas",
+   "source": "Downloads/CP Driver Banners/AmeriHealth Caritas.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59580,
+   "padded": false
+  },
+  {
    "file": "amici-lansdale.webp",
    "name": "Amici Lansdale",
    "source": "Amici Lansdale.png",
@@ -76,6 +87,17 @@
     360
    ],
    "bytes": 65796,
+   "padded": false
+  },
+  {
+   "file": "aneu-paoli.webp",
+   "name": "ANEU Paoli",
+   "source": "ANEU Paoli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 55472,
    "padded": false
   },
   {
@@ -189,6 +211,17 @@
    "padded": false
   },
   {
+   "file": "car-miras-deli.webp",
+   "name": "Car-Miras Deli",
+   "source": "Downloads/CP Driver Banners/Car-Miras Deli.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 61968,
+   "padded": false
+  },
+  {
    "file": "carlinos-ardmore.webp",
    "name": "Carlinos Ardmore",
    "source": "Carlinos Ardmore.png",
@@ -244,6 +277,17 @@
    "padded": false
   },
   {
+   "file": "colonial-village-meat-market-folsom.webp",
+   "name": "Colonial Village Meat Market Folsom",
+   "source": "Downloads/CP Driver Banners/Colonial Village Meat Market Folsom.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 71662,
+   "padded": false
+  },
+  {
    "file": "colonial-village-meat-market-havertown.webp",
    "name": "Colonial Village Meat Market Havertown",
    "source": "Colonial Village Meat Market Havertown.png",
@@ -255,16 +299,26 @@
    "padded": false
   },
   {
-   "file": "meat-house-market-chadds-ford.webp",
-   "name": "Meat House Market Chadds Ford",
-   "source": "Colonial Village Meat Market Springfield.png",
+   "file": "colonial-village-meat-market-newtown-square.webp",
+   "name": "Colonial Village Meat Market Newtown Square",
+   "source": "Downloads/CP Driver Banners/Colonial Village Meat Market Newtown Square.png",
    "srcSize": [
-    2172,
-    724
+    1200,
+    360
    ],
-   "bytes": 54900,
-   "padded": true,
-   "note": "Source file on the Mac was mislabeled Colonial Village Meat Market Springfield; artwork reads MEAT HOUSE MARKET / CHADDS FORD"
+   "bytes": 62152,
+   "padded": false
+  },
+  {
+   "file": "colonial-village-meat-market-springfield.webp",
+   "name": "Colonial Village Meat Market Springfield",
+   "source": "Downloads/CP Driver Banners/Colonial Village Meat Market Springfield.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 62820,
+   "padded": false
   },
   {
    "file": "colonial-village-meat-market-west-chester.webp",
@@ -322,6 +376,28 @@
    "padded": false
   },
   {
+   "file": "custom-bagels-media.webp",
+   "name": "Custom Bagels Media",
+   "source": "Downloads/CP Driver Banners/Custom Bagels Media.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 54056,
+   "padded": false
+  },
+  {
+   "file": "difabios-market-and-tap.webp",
+   "name": "DiFabios Market & Tap",
+   "source": "Downloads/CP Driver Banners/DiFabios Market & Tap.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 66374,
+   "padded": false
+  },
+  {
    "file": "don-pedro-philadelphia.webp",
    "name": "Don Pedro Philadelphia",
    "source": "Don Pedro Philadelphia.png",
@@ -333,6 +409,17 @@
    "padded": false
   },
   {
+   "file": "erin-pub-norwood.webp",
+   "name": "Erin Pub Norwood",
+   "source": "Downloads/CP Driver Banners/Erin Pub Norwood.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 52116,
+   "padded": false
+  },
+  {
    "file": "everything-bagel-north-wales.webp",
    "name": "Everything Bagel North Wales",
    "source": "Everything Bagel North Wales.png",
@@ -341,6 +428,28 @@
     360
    ],
    "bytes": 67728,
+   "padded": false
+  },
+  {
+   "file": "femis-pizza-collingdale.webp",
+   "name": "Femis Pizza Collingdale",
+   "source": "Downloads/CP Driver Banners/Femis Pizza Collingdale.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65598,
+   "padded": false
+  },
+  {
+   "file": "femis-pizza-party-brookhaven.webp",
+   "name": "Femis Pizza Party Brookhaven",
+   "source": "Downloads/CP Driver Banners/Femis Pizza Party Brookhaven.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 75468,
    "padded": false
   },
   {
@@ -707,6 +816,17 @@
    "padded": false
   },
   {
+   "file": "meat-house-market-chadds-ford.webp",
+   "name": "Meat House Market Chadds Ford",
+   "source": "Downloads/CP Driver Banners/Meat House Market Chadds Ford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 58548,
+   "padded": false
+  },
+  {
    "file": "merion-cricket-club-haverford.webp",
    "name": "Merion Cricket Club Haverford",
    "source": "Merion Cricket Club Haverford.png",
@@ -792,17 +912,6 @@
     360
    ],
    "bytes": 58202,
-   "padded": false
-  },
-  {
-   "file": "oneills-glenside.webp",
-   "name": "ONeills Glenside",
-   "source": "ONeills Glenside.png",
-   "srcSize": [
-    1200,
-    360
-   ],
-   "bytes": 57204,
    "padded": false
   },
   {
@@ -946,6 +1055,17 @@
     360
    ],
    "bytes": 61382,
+   "padded": false
+  },
+  {
+   "file": "oneills-glenside.webp",
+   "name": "ONeills Glenside",
+   "source": "ONeills Glenside.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57204,
    "padded": false
   },
   {
@@ -1125,6 +1245,17 @@
    "padded": false
   },
   {
+   "file": "rolling-stars-newtown-square.webp",
+   "name": "Rolling Stars Newtown Square",
+   "source": "Downloads/CP Driver Banners/Rolling Stars Newtown Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 53254,
+   "padded": false
+  },
+  {
    "file": "rolling-stars-west-chester.webp",
    "name": "Rolling Stars West Chester",
    "source": "Rolling Stars West Chester.png",
@@ -1158,26 +1289,26 @@
    "padded": false
   },
   {
-   "file": "amerihealth-caritas.webp",
-   "name": "AmeriHealth Caritas",
-   "source": "S302_AmeriHealthCaritas.png",
+   "file": "rybread-fairmount.webp",
+   "name": "rybread Fairmount",
+   "source": "rybread Fairmount.png",
    "srcSize": [
-    2172,
-    724
+    1200,
+    360
    ],
-   "bytes": 57682,
-   "padded": true
+   "bytes": 56420,
+   "padded": false
   },
   {
-   "file": "car-miras-deli.webp",
-   "name": "Car-Miras Deli",
-   "source": "S303_CarMiras.png",
+   "file": "rybrew-brewerytown.webp",
+   "name": "rybrew Brewerytown",
+   "source": "rybrew Brewerytown.png",
    "srcSize": [
-    2172,
-    724
+    1200,
+    360
    ],
-   "bytes": 57610,
-   "padded": true
+   "bytes": 52614,
+   "padded": false
   },
   {
    "file": "saint-charles-borromeo-seminary.webp",
@@ -1210,6 +1341,17 @@
     360
    ],
    "bytes": 64982,
+   "padded": false
+  },
+  {
+   "file": "sap-newtown-square.webp",
+   "name": "SAP Newtown Square",
+   "source": "Downloads/CP Driver Banners/SAP Newtown Square.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 56046,
    "padded": false
   },
   {
@@ -1254,6 +1396,17 @@
     360
    ],
    "bytes": 58806,
+   "padded": false
+  },
+  {
+   "file": "southco-concordville.webp",
+   "name": "Southco Concordville",
+   "source": "Downloads/CP Driver Banners/Southco Concordville.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 60054,
    "padded": false
   },
   {
@@ -1342,6 +1495,17 @@
     360
    ],
    "bytes": 56328,
+   "padded": false
+  },
+  {
+   "file": "swarthmore-college.webp",
+   "name": "Swarthmore College",
+   "source": "Downloads/CP Driver Banners/Swarthmore College.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 59774,
    "padded": false
   },
   {
@@ -1444,6 +1608,17 @@
    "padded": false
   },
   {
+   "file": "the-residence-at-chadds-ford.webp",
+   "name": "The Residence at Chadds Ford",
+   "source": "Downloads/CP Driver Banners/The Residence at Chadds Ford.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 65580,
+   "padded": false
+  },
+  {
    "file": "the-residence-bala-cynwyd.webp",
    "name": "The Residence Bala Cynwyd",
    "source": "The Residence Bala Cynwyd.png",
@@ -1521,17 +1696,6 @@
    "padded": false
   },
   {
-   "file": "vip-market-walnut-street.webp",
-   "name": "VIP Market Walnut Street",
-   "source": "VIP Market Walnut Street.png",
-   "srcSize": [
-    1200,
-    360
-   ],
-   "bytes": 57434,
-   "padded": false
-  },
-  {
    "file": "valley-house-malvern.webp",
    "name": "Valley House Malvern",
    "source": "Valley House Malvern.png",
@@ -1551,6 +1715,17 @@
     360
    ],
    "bytes": 61894,
+   "padded": false
+  },
+  {
+   "file": "vip-market-walnut-street.webp",
+   "name": "VIP Market Walnut Street",
+   "source": "VIP Market Walnut Street.png",
+   "srcSize": [
+    1200,
+    360
+   ],
+   "bytes": 57434,
    "padded": false
   },
   {
@@ -1606,28 +1781,6 @@
     360
    ],
    "bytes": 52766,
-   "padded": false
-  },
-  {
-   "file": "rybread-fairmount.webp",
-   "name": "rybread Fairmount",
-   "source": "rybread Fairmount.png",
-   "srcSize": [
-    1200,
-    360
-   ],
-   "bytes": 56420,
-   "padded": false
-  },
-  {
-   "file": "rybrew-brewerytown.webp",
-   "name": "rybrew Brewerytown",
-   "source": "rybrew Brewerytown.png",
-   "srcSize": [
-    1200,
-    360
-   ],
-   "bytes": 52614,
    "padded": false
   }
  ]
