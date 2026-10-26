@@ -1,5 +1,5 @@
 {
- "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Every logo sits bare on the dark header (25 Oct: no plates). Files in plate/ are retired, kept for history. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/.",
+ "about": "CUSTOMER-side store logos for the Customer Order App order screen (Grid.html header). Each is the store's OWN original logo: resized only (fit inside 600x160, never enlarged), no crop, no recolor, no redraw, except The Residence (Brian's approved exception, dark gray lettering to white). Every logo sits bare on the dark header (25 Oct: no plates). Files in plate/ are retired, kept for history. Customers.LogoUrl holds the path below (e.g. 'meathouse.webp' or 'plate/femis.webp'). Served at https://employee.cooneyprovisions.com/logos/. 26 Oct: 62 more files for 77 stores on routes #03-#09 added; those entries list customerIds and the exact transform applied.",
  "rules": "Original files only. Resize only, no crop/recolor/redraw. HARD RULE (Brian, 25 Oct): every logo file has a truly transparent background. Colors may be changed so a logo reads on the dark header; the logo and brand never are (Brian, 25 Oct).",
  "files": [
   {
@@ -223,6 +223,703 @@
    "transform": "25 Oct: StoreLogos.gs 'corropolese' mark; dark maroon name brightened to the same red, dark olive line lightened. Chef and layout untouched. (Overrides the 2026-08-05 'bare as is' call: Brian 25 Oct, 'use whatever looks best and cleanest for the customer'.)",
    "shown": "bare on the dark header",
    "approvedBy": "Brian 2026-10-25: 'Change the color if you need to, but not the logo or brand'"
+  },
+  {
+   "file": "rolynn.webp",
+   "key": "rolynn",
+   "customerIds": [
+    "C033"
+   ],
+   "source": "https://www.rolynndeli.com/wp-content/uploads/2017/11/rolynnlogobigger.png",
+   "transform": "Ro-Lynn site logo; black 'DELI' made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "sap.webp",
+   "key": "sap",
+   "customerIds": [
+    "C036"
+   ],
+   "source": "https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg/sap-logo-svg.svg",
+   "transform": "SAP header SVG, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "sopranos.webp",
+   "key": "sopranos",
+   "customerIds": [
+    "C037"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/4625/original/13997.png",
+   "transform": "Soprano's site logo; white box removed, black ink made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "tallutos.webp",
+   "key": "tallutos",
+   "customerIds": [
+    "C041",
+    "C086"
+   ],
+   "source": "https://www.tallutos.com/images/logos/Talluto%20Script%20White.png",
+   "transform": "Talluto's white script from their header",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "pasd.webp",
+   "key": "pasd",
+   "customerIds": [
+    "C051"
+   ],
+   "source": "https://cdnsm5-ss8.sharpschool.com/UserFiles/Servers/Server_435174/Image/Seal%20Top%20Banner.png",
+   "transform": "Phoenixville Area SD seal, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "cencora.webp",
+   "key": "cencora",
+   "customerIds": [
+    "C053"
+   ],
+   "source": "https://www.cencora.com/-/media/assets/corporate/global/logos/cencora-logo.png",
+   "transform": "Cencora wordmark; purple made white (their reverse treatment)",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "georgesmarket.webp",
+   "key": "georgesmarket",
+   "customerIds": [
+    "C054"
+   ],
+   "source": "https://georgesmarket.com/wp-content/uploads/2015/01/logo.png",
+   "transform": "George's ShopnBag logo; black text made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "hamiltonlane.webp",
+   "key": "hamiltonlane",
+   "customerIds": [
+    "C055"
+   ],
+   "source": "https://cdn.cookielaw.org/logos/29bc1d7b-5201-4c3c-8e4d-0d998aa5b772/0193d63f-4059-7d17-9f78-6646b6759c0c/55b6cc58-102f-4053-8cae-3d5bdb43c11b/HLLogo1A_Blue_Icon_Dark_Text_(1).png",
+   "transform": "Hamilton Lane; navy wordmark made white, blue HL box kept",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "hillwhitemarsh.webp",
+   "key": "hillwhitemarsh",
+   "customerIds": [
+    "C056"
+   ],
+   "source": "https://www.thehillatwhitemarsh.org/wp-content/uploads/2022/01/Logo-1-1.svg",
+   "transform": "The Hill at Whitemarsh SVG; gray text made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "philacricket.webp",
+   "key": "philacricket",
+   "customerIds": [
+    "C060",
+    "C061"
+   ],
+   "source": "https://www.philacricket.com/custom/design/images/logo-white-2x.png",
+   "transform": "Philadelphia Cricket Club white script",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "springford.webp",
+   "key": "springford",
+   "customerIds": [
+    "C063"
+   ],
+   "source": "https://www.spring-ford.net/uploaded/themes/default_15/images/logo.png",
+   "transform": "Spring-Ford crest + white text, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "whitemarshvalley.webp",
+   "key": "whitemarshvalley",
+   "customerIds": [
+    "C064"
+   ],
+   "source": "https://www.whitemarshvalleycc.com/custom/design/images/logo.svg",
+   "transform": "WVCC monogram; dark green made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "carlinos.webp",
+   "key": "carlinos",
+   "customerIds": [
+    "C066"
+   ],
+   "source": "https://www.carlinosmarket.com/media/logo/stores/1/carlinos-market-logo-white.png",
+   "transform": "Carlino's white version from their site",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "colonialmarket.webp",
+   "key": "colonialmarket",
+   "customerIds": [
+    "C067"
+   ],
+   "source": "https://popmenucloud.com/aklemxin/70623004-21c0-4eec-af88-63a143eccf0a.png",
+   "transform": "Colonial Market (Havertown) logo, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "greatamericanpub.webp",
+   "key": "greatamericanpub",
+   "customerIds": [
+    "C069"
+   ],
+   "source": "https://thegreatamericanpub.com/wp-content/uploads/2023/10/Great-American-Pub-Wayne-01.png",
+   "transform": "Great American Pub Wayne logo, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "ithanmarket.webp",
+   "key": "ithanmarket",
+   "customerIds": [
+    "C071"
+   ],
+   "source": "https://ithanmarket.com/wp-content/uploads/2019/12/ithan-logo.png",
+   "transform": "Ithan Market wordmark, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "llanerch.webp",
+   "key": "llanerch",
+   "customerIds": [
+    "C074"
+   ],
+   "source": "https://www.llanerchcc.org/getmedia/66b461cf-6f11-4915-8ec5-aa760043bc6b/LlanerchccLogo_white.aspx?width=792&height=1224&ext=.png",
+   "transform": "Llanerch CC white L 1901",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "merioncricket.webp",
+   "key": "merioncricket",
+   "customerIds": [
+    "C077"
+   ],
+   "source": "https://www.merioncricket.com/wp-content/uploads/2026/01/merion-white.png",
+   "transform": "Merion Cricket Club white crest",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "meriongolf.webp",
+   "key": "meriongolf",
+   "customerIds": [
+    "C078"
+   ],
+   "source": "https://www.meriongolfclub.com/SiteDesign/Images2016/logo.aspx",
+   "transform": "Merion Golf Club wicker basket (small source)",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "oldnelson.webp",
+   "key": "oldnelson",
+   "customerIds": [
+    "C079",
+    "C080",
+    "C081",
+    "C084",
+    "C122",
+    "C124",
+    "C125",
+    "C126",
+    "C127"
+   ],
+   "source": "https://www.oldnelson3600.com/logo.png",
+   "transform": "Old Nelson Food Company roundel",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "oldnelsoncafe.webp",
+   "key": "oldnelsoncafe",
+   "customerIds": [
+    "C123"
+   ],
+   "source": "https://cafeoldnelson.com/wp-content/uploads/2025/02/logo.png",
+   "transform": "Cafe Old Nelson roundel (Arch St)",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "parkwaycorner.webp",
+   "key": "parkwaycorner",
+   "customerIds": [
+    "C082"
+   ],
+   "source": "https://parkwaycornerpa.com/wp-content/uploads/2025/04/Parkway-Logo.png",
+   "transform": "Parkway Corner Deli; white square removed, black made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "rivercrest.webp",
+   "key": "rivercrest",
+   "customerIds": [
+    "C083"
+   ],
+   "source": "https://rivercrestgolfclub.com/wp-content/uploads/2018/01/RClogo_final_retina.png",
+   "transform": "RiverCrest; black wordmark white, green script brightened",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "tredici.webp",
+   "key": "tredici",
+   "customerIds": [
+    "C087"
+   ],
+   "source": "https://images.squarespace-cdn.com/content/v1/669bdca7c35ee02d0b393906/3cb86107-ef8f-4510-8d4b-035e06da9d8e/tredici-text.png?format=1500w",
+   "transform": "Tredici script, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "zesto.webp",
+   "key": "zesto",
+   "customerIds": [
+    "C088"
+   ],
+   "source": "https://zestopizza.com/sites/default/files/logo_0.png",
+   "transform": "Zesto Pizza & Grill, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "cafeclick.webp",
+   "key": "cafeclick",
+   "customerIds": [
+    "C090"
+   ],
+   "source": "https://cafeclick.restaurant/wp-content/uploads/2026/05/Cafe_Click_Logo-2.png",
+   "transform": "Cafe Click script; slate made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "heirloommarket.webp",
+   "key": "heirloommarket",
+   "customerIds": [
+    "C093",
+    "C116",
+    "C117"
+   ],
+   "source": "https://dynl.mktgcdn.com/p/Q-B-Ih-vaeqqp4GVlaMRW9YclS8rQuwnZcJKQhlfeKE/600x201.png",
+   "transform": "GIANT Heirloom Market; gray made white, GIANT red kept",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "ibx.webp",
+   "key": "ibx",
+   "customerIds": [
+    "C094"
+   ],
+   "source": "https://www.ibx.com/images/logo.independence.svg",
+   "transform": "Independence Blue Cross SVG, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "metfresh.webp",
+   "key": "metfresh",
+   "customerIds": [
+    "C096"
+   ],
+   "source": "https://www.metfoods.com/wp-content/themes/shoptocook-responsive-metfoods-2/images/MetFresh_color.png",
+   "transform": "Met Fresh color logo, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "morganlewis.webp",
+   "key": "morganlewis",
+   "customerIds": [
+    "C099"
+   ],
+   "source": "https://www.morganlewis.com/-/media/starterkit/ml_logo_wht_rgb_d_responsive-off.svg?rev=ec2bfa2953f04d16903737ba2edeac02&hash=B919C07E2FC96C6FE69079CA06920BB6",
+   "transform": "Morgan Lewis white SVG",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "stcharles.webp",
+   "key": "stcharles",
+   "customerIds": [
+    "C104"
+   ],
+   "source": "https://www.scs.edu/wp-content/uploads/2021/07/Group-507-1.png",
+   "transform": "St. Charles Borromeo Seminary crest + white text",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "steakemup.webp",
+   "key": "steakemup",
+   "customerIds": [
+    "C105"
+   ],
+   "source": "https://shop-logos.imgix.net/shops/9172/original/9172.png?auto=compress,format",
+   "transform": "Steak 'Em Up red badge",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "urbanoutfitters.webp",
+   "key": "urbanoutfitters",
+   "customerIds": [
+    "C106"
+   ],
+   "source": "https://images.ctfassets.net/q602vtcuu3w3/5Kn3hosoikXHaQhOx4GikS/85a65a5048a108b332ae5aac4c44c009/SITE_LOGO_2025.svg",
+   "transform": "Urban Outfitters wordmark made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "gourmet555.webp",
+   "key": "gourmet555",
+   "customerIds": [
+    "C107"
+   ],
+   "source": "https://cityave.org/wp-content/uploads/2020/06/555-gourmet.png",
+   "transform": "555 Gourmet Deli sign logo",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "chopresearch.webp",
+   "key": "chopresearch",
+   "customerIds": [
+    "C108"
+   ],
+   "source": "https://www.research.chop.edu/themes/custom/chopresearchb5/images/logo_color_chopri.svg",
+   "transform": "CHOP Research Institute; blues brightened",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "alldayhoagies.webp",
+   "key": "alldayhoagies",
+   "customerIds": [
+    "C109"
+   ],
+   "source": "https://cdn.prod.website-files.com/66968a4d0214feb41ca19b5d/6696a439b9b1fda9030f1e18_All-Day-Hoagies-logo.webp",
+   "transform": "All Day Hoagies, as is",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "antspants.webp",
+   "key": "antspants",
+   "customerIds": [
+    "C110"
+   ],
+   "source": "https://antspantscafe.com/wp-content/uploads/2020/07/logo-header.png",
+   "transform": "Ants Pants; gray text white, brown ant brightened",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "borromini.webp",
+   "key": "borromini",
+   "customerIds": [
+    "C112"
+   ],
+   "source": "https://borrominiristorante.com/wp-content/uploads/2026/05/Borromini_Logo-1.png",
+   "transform": "Borromini white wordmark",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "continental.webp",
+   "key": "continental",
+   "customerIds": [
+    "C113"
+   ],
+   "source": "https://continentalmidtown.com/wp-content/uploads/2026/05/Continental_Mid_Town_Logo.png",
+   "transform": "The Continental Mid-town white script",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "foodery.webp",
+   "key": "foodery",
+   "customerIds": [
+    "C047",
+    "C114"
+   ],
+   "source": "https://images.squarespace-cdn.com/content/v1/5345ec04e4b0ed2cdb63a5de/1398876020875-ZOJWLMNRNC1GTKGW7BWY/roundlogo_rect-2%281%29.png",
+   "transform": "The Foodery roundel (group logo)",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "oliviercafe.webp",
+   "key": "oliviercafe",
+   "customerIds": [
+    "C128"
+   ],
+   "source": "https://oliviercafe.com/pluto-images/funnel/images/e2d5b329-2752-414b-b882-4d901d108b47",
+   "transform": "Olivier Cafe badge; white square removed, black made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "pennmedicine.webp",
+   "key": "pennmedicine",
+   "customerIds": [
+    "C132",
+    "C133"
+   ],
+   "source": "https://cdn.prod.website-files.com/681dde86819b0b740a4fe086/681dde86819b0b740a4fe139_Desktop%3DTrue%2C%20Over%20Light%3DTrue.svg",
+   "transform": "Penn Medicine; navy wordmark made white, shield kept",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "phillysgourmet.webp",
+   "key": "phillysgourmet",
+   "customerIds": [
+    "C134"
+   ],
+   "source": "https://images.squarespace-cdn.com/content/v1/59ff315bbce176412ff0071d/1533427900499-YL8WBJOAK75T9G8K7ZHR/pgs+logo.png?format=1500w",
+   "transform": "Philly's Gourmet Steaks; black box removed",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "rollo.webp",
+   "key": "rollo",
+   "customerIds": [
+    "C135"
+   ],
+   "source": "https://static.wixstatic.com/media/41a5cf_36f740dfff124ceaa611afdc1cdc2d10~mv2.png",
+   "transform": "Rollo Provisions badge; cream square removed",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "rybrew.webp",
+   "key": "rybrew",
+   "customerIds": [
+    "C137"
+   ],
+   "source": "https://static.wixstatic.com/media/8faa52_b898f388b5574eaba116f310cb814885.jpg",
+   "transform": "rybrew; white box removed, black made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "waterfront.webp",
+   "key": "waterfront",
+   "customerIds": [
+    "C143"
+   ],
+   "source": "https://waterfrontgourmet.com/uploads/2020/01/wfg-logo-new.png",
+   "transform": "Waterfront Gourmet Cafe & Deli roundel",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "countrybutcher.webp",
+   "key": "countrybutcher",
+   "customerIds": [
+    "C145"
+   ],
+   "source": "https://images.getbento.com/accounts/893b55524402c98ba0ef154342c8aed3/media/images/79082logo_country-butcher.png",
+   "transform": "Country Butcher white monogram",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "freeds.webp",
+   "key": "freeds",
+   "customerIds": [
+    "C146"
+   ],
+   "source": "https://www.freedsmarket.com/wp-content/uploads/sites/125/2016/09/logo.png",
+   "transform": "Freed's Supermarket badge",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "landhope.webp",
+   "key": "landhope",
+   "customerIds": [
+    "C148",
+    "C149"
+   ],
+   "source": "https://landhope.com/wp-content/uploads/2021/01/logo-03.png",
+   "transform": "Landhope Farms roundel",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "sovana.webp",
+   "key": "sovana",
+   "customerIds": [
+    "C153"
+   ],
+   "source": "https://images.getbento.com/accounts/d54644add6042680c78ab3b888ea1607/media/images/76066Catering_Logo_1.png",
+   "transform": "Sovana Bistro S tile",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "steelcity.webp",
+   "key": "steelcity",
+   "customerIds": [
+    "C154"
+   ],
+   "source": "https://phoenixvillechamber.org/wp-content/uploads/2017/12/steel-city-brewery-logo-200x200.png",
+   "transform": "Steel City Coffee House pick",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "toscos.webp",
+   "key": "toscos",
+   "customerIds": [
+    "C157"
+   ],
+   "source": "https://toscos.net/wp-content/uploads/2023/09/Tosco-logo-image.png",
+   "transform": "Tosco's torn-paper mark",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "toscosdelight.webp",
+   "key": "toscosdelight",
+   "customerIds": [
+    "C158"
+   ],
+   "source": "https://toscositaliandelight.net/wp-content/uploads/2023/09/Toscos-Italian-delight-logo-bw.png",
+   "transform": "Tosco's Italian Delight torn-paper mark",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "antonellas.webp",
+   "key": "antonellas",
+   "customerIds": [
+    "C065"
+   ],
+   "source": "https://img1.wsimg.com/isteam/ip/d0f53a16-0556-4c38-91ec-c13991a9fb71/blob.png",
+   "transform": "Antonella's red tile",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "jeannies.webp",
+   "key": "jeannies",
+   "customerIds": [
+    "C073"
+   ],
+   "source": "https://jeanniesdeli.org/site/templates/images/JTLogo.png",
+   "transform": "Jeannie's Deli; black square removed",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "suesproduce.webp",
+   "key": "suesproduce",
+   "customerIds": [
+    "C085"
+   ],
+   "source": "https://suesmarketphilly.toast.site (sueslogo.png via Toast CDN)",
+   "transform": "Sue's Produce Market roundel",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "residencebala.webp",
+   "key": "residencebala",
+   "customerIds": [
+    "C102"
+   ],
+   "source": "https://www.lcbseniorliving.com/wp-content/uploads/2020/02/Bala_full-color.png",
+   "transform": "The Residence at Bala Cynwyd; black text made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "forestas.webp",
+   "key": "forestas",
+   "customerIds": [
+    "C072"
+   ],
+   "source": "http://www.forestasmarket.com/wp-content/themes/forestas/theme-images/forestas-logo-500w.png",
+   "transform": "Foresta's Meats cow; blue brightened to read on black",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "manayunkpizza.webp",
+   "key": "manayunkpizza",
+   "customerIds": [
+    "C095"
+   ],
+   "source": "https://manayunkpizza.square.site (MANAYUNK PIZZA POS READ DISPLAY PNG)",
+   "transform": "Manayunk Pizza; black square removed",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "ppa.webp",
+   "key": "ppa",
+   "customerIds": [
+    "C101"
+   ],
+   "source": "https://resources.finalsite.net/images/f_auto,q_auto/v1644332326/stringtheoryschoolscom/npe1mqc5cbiwvfkjbxf8/PPACS-Primary-Logo-White-on-Trans11.png",
+   "transform": "Philadelphia Performing Arts white logo from their site",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "swarthmore.webp",
+   "key": "swarthmore",
+   "customerIds": [
+    "C040"
+   ],
+   "source": "https://www.swarthmore.edu (header SVG wordmark)",
+   "transform": "Swarthmore College wordmark; their red brightened slightly",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "sweetbrew.webp",
+   "key": "sweetbrew",
+   "customerIds": [
+    "C155"
+   ],
+   "source": "https://sweetbrewpxv.square.site (Sweet Brew Cafe logo, IMG_8617)",
+   "transform": "Sweet Brew Cafe; black tagline made white",
+   "approvedBy": "Brian 2026-10-26",
+   "shown": "bare on the dark header"
   }
  ]
 }
