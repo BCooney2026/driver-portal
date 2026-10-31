@@ -920,6 +920,28 @@
    "transform": "Sweet Brew Cafe; black tagline made white",
    "approvedBy": "Brian 2026-10-26",
    "shown": "bare on the dark header"
+  },
+  {
+   "file": "giovannis724.webp",
+   "key": "giovannis724",
+   "customerIds": [
+    "C159"
+   ],
+   "source": "https://www.giovannis724.com/wp-content/uploads/2019/01/giovannis-logo_new-1.png",
+   "transform": "Giovanni's 724 site logo (250x123, their only one); white badge removed, black/gray ink made white, maroon brightened",
+   "approvedBy": "Brian 2026-10-31 (sent the site)",
+   "shown": "bare on the dark header"
+  },
+  {
+   "file": "giovannisexpress.webp",
+   "key": "giovannisexpress",
+   "customerIds": [
+    "C160"
+   ],
+   "source": "https://giovannisexpress724.com/wp-content/uploads/2023/11/Gio724-express-Logo.png",
+   "transform": "Giovanni's Italian Express site logo; white box removed, black/gray ink made white, red and green brightened",
+   "approvedBy": "Brian 2026-10-31 (sent the site)",
+   "shown": "bare on the dark header"
   }
  ]
 }
